@@ -1,22 +1,22 @@
 {
-  "schema": 2,
-  "product": "anqila-y3-204521",
-  "channel": "stable",
-  "version": "1.0.27",
-  "update_protocol": 2,
-  "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-09-19T08:11:07.0920517Z",
-  "release_notes": "# 安其拉 1.0.27 更新简要\n\n- **执行器侧授权也改直连优先（本次重点）**：上一版里\"编辑器侧\"已直连，但点\"应用\"时的一次性执行授权（`/auth/redeem`）仍强制走系统代理；代理软件一关、注册表却还留着 `127.0.0.1:xxxx` 的电脑，就会出现\"能读取、点应用失败\"。现在两条链路完全统一：**默认直连，完全不看系统代理**；只有当整条请求判定为\"根本没到服务器\"的连接层失败（DNS / 连接 / TLS / 无 HTTP 回包）时，才自动用系统代理重发一次。\n- **不重复兑换**：只有\"请求根本没发出/没到服务器\"才允许重发；只要服务器回过 HTTP 包（含 4xx/5xx）一律不重发，一次性授权不会被二次消耗。\n- **任意电脑、无需梯子**：更新清单与安装包已接入大陆可直连镜像（`ghproxy.net`、`gh.xxooo.cf`、`gh-proxy.com` 优先，原站与 GitHub 直连兜底），授权服务（Supabase）实测直连 0.7 秒可达；整机不装任何代理软件也能完成\"检查更新 → 下载 → 授权 → 读取 → 应用\"全流程。系统代理仅作为直连整列失败后的兜底，且永不转发 Windows 登录凭据。\n- **离线宽限**：已激活授权断网时默认继续可用 72 小时，操作本地记账、联网后回填；不伪造次数。\n- 其余功能完全不动：商城 / 装备 / 传家宝 / 宝库 / 称号 / 福利 / 关卡 / 成就等发放逻辑、写入槽位与持久化路径与 1.0.26 完全一致。\n- 地图文件依旧**永不改写**（写入前校验 EntryMap 哈希）；平台购买、支付、订单、回执仍为只读。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.27 → 直接点\"检查更新\"（无需梯子）→ 进入地图 → 读取并备份 → 应用 → 退出重进验证。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.27/AnqilaTool.exe",
-  "size": 26477536,
-  "sha256": "1E83C41CAB0DCDADCD1617CDD3D1AD2843C835B564BD90A558F9E119277B150D",
-  "core_sha256": "AB00D984988CF4B05A3FD27D57EEFC550F11645E7EEEF9F0E3619480A59FEF02",
-  "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/574368523",
-  "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
-  "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.27/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.27/AnqilaTool.exe",
-    "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
-  ]
+    "schema":  2,
+    "product":  "anqila-y3-204521",
+    "channel":  "stable",
+    "version":  "1.0.29",
+    "update_protocol":  2,
+    "legacy_upgrade_version":  "2.0.0.0",
+    "published_utc":  "2026-09-19T13:22:15.4422887Z",
+    "release_notes":  "# 安其拉 1.0.29 更新简要\n\n- **传家宝定制全量完善（本次重点）**：神器 / 不朽 / 无上传家宝现在会**按原品质创建**（强化上限分别 18 / 21 / 24），不再出现\"填 18 级只到 15 级、回读校验失败\"的情况。实现方式仍然全部走地图自己的后端：先用地图 `manager.createRelic(部位, 原品质, 套装)` 建实例，再把玩家选的主 / 副词条写进同一张地图实例表（数值用地图 `stat_engine` 的公式重算），最后用地图 `manager.enhance` 逐级强化，每一步都由地图自己落盘并更新反作弊 hash；任何一步不可用都会自动降级回地图「自塑尘脂」定制创建（传说 5★，上限 15）并把等级收敛到 15，不会再报\"写进去再回读失败\"。\n- **修复\"部分传家宝无法指定主属性 / 被拦截\"（本次修复）**：主 / 副词条池改为**实时读地图自己的配置**（`Config.getMainPool(部位)` / `Config.getSubPool()` / 部位专属副属性池 / `铭文部位表`），与地图 `createCustomRelic` 的校验完全同源。真实地图里「头盔 / 护手」这类部位的主属性是**固定**的（只有 1 条），现在面板只会显示这一条，不会再出现\"面板能选、写进去被地图拒\"；地图配置读不到时才回退到内置静态表。\n- **只填主属性或只填副属性都能落地**：没选全的部分（主属性或副属性）由地图自己的合法词条池自动补齐；只有\"该部位确实没有可用词条池\"或\"所选主属性不属于该部位\"才会在**写入任何数据之前**被拒绝，并给出中文原因（零写入、零上传）。\n- **传家宝明细页\"直接刷\"修复（本次修复）**：只填「定制·强化等级 / 主属性 / 副属性」而没勾\"传家宝发放\"时也会自动落地 1 件（持久化到存档槽 324）；勾选\"传家宝发放\"时语义与旧版完全一致，未勾选的条目不会写入。\n- **批量页更好用**：4 个副属性下拉框全部放开（地图 `MAX_SUBS=4`，与品质无关，只填 1 条也行）；新增「只套用主+副词条」按钮；条目上实时显示定制摘要（`★强化18/主13/副1=21`）；点选某件时右侧直接显示 `套装 / 部位 / 品质(星) / 强化上限 / 初始副条 / 已持有 / 定制上限`。\n- **回读失败信息可读**：回读校验失败不再只报一句通用错误，会把地图侧的具体失败项带出来（例如 `heirloom-detail:炎帝战甲:level/15/18`），一眼知道差在哪一件、哪个部位。\n- **其他电脑也能完整使用（本次修复）**：单文件包内嵌的使用说明此前因为打包脚本编码问题没有被放进包内，已修复；并修复中国大陆镜像仓库（`anqila-updates`）的发布链路，墙内可直接走镜像下载。\n- **其余功能完全不动**：商城全分类发放 / 点亮、装备、宝库、称号、福利、关卡、成就、宝石部位计数、大厅难度联动等逻辑与写入槽位均无变化。\n- 地图文件依旧**永不改写**（写入前校验 EntryMap 哈希）；平台购买、支付、订单、回执仍为只读。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.29 → 直接点\"检查更新\"（无需梯子）→ 进入地图 → 读取并备份 → 批量页勾选传家宝并逐件定制（或在明细页直接填定制词条）→ 应用 → 退出重进验证（强化等级 / 词条会保持）。神器及以上传家宝定制到 18 级时，实例品质会保持神器，不会掉成传说。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.29/AnqilaTool.exe",
+    "size":  26093728,
+    "sha256":  "46215CDB01D69B026C9C876097E2721FCB87DC59238AF5E1C8AD77F1EC262906",
+    "core_sha256":  "E6240D653DAE3650159B5627B89463CD289C55C9F9E7F9848AA2DD6CFB4B5F63",
+    "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/574809898",
+    "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
+    "mirrors":  [
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.29/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.29/AnqilaTool.exe",
+                    "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
+                ]
 }
