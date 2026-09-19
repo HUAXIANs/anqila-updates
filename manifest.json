@@ -1,0 +1,22 @@
+{
+  "schema": 2,
+  "product": "anqila-y3-204521",
+  "channel": "stable",
+  "version": "1.0.25",
+  "update_protocol": 2,
+  "legacy_upgrade_version": "2.0.0.0",
+  "published_utc": "2026-09-19T06:43:18.0856865Z",
+  "release_notes": "# 安其拉 1.0.25 更新简要\n\n- **国内直连优化：不开梯子也能自动更新与使用全部功能**\n  - **直连优先**：默认不走系统代理/PAC。国内常见“代理软件已退出但系统代理设置残留（127.0.0.1:7890 之类）”，之前会让更新和登录全部失败；现在先直连，只有整列端点都连不上时才自动回落到系统代理再试一轮。\n  - **多端点竞速**：更新清单与授权服务都支持多地址，并发探测后按响应速度排名，最快的優先使用。\n  - **端点记忆**：上次成功的地址写入 `%LOCALAPPDATA%\\Anqila\\updates\\endpoints.json`，下次直接命中；地址失效会自动切换并更新记忆，不会卡住、也不会重复消耗次数。\n  - **IPv4 优先**：双栈域名自动改走 A 记录，绕开常见的“IPv6 半通”路由。\n  - **连接参数**：TLS 1.2 + 1.3 自适应（握手失败自动降级）、连接池 24、禁用 100-continue 与 Nagle、DNS 轮询刷新；任何情况都不转发 Windows 登录凭据。\n- **下载加速**：≥ 4MB 的更新包自动多连接 Range 分段下载（默认 4 线程，可用 `download_connections` 调整），失败自动回退单流重下；多个下载镜像（官方 + ghproxy.net / ghfast.top 前缀镜像）自动切换。\n- **离线宽限（断网/被墙也能用）**：已激活的授权在断网时继续可用，默认 72 小时（`offline_grace_hours`），期间的操作在本机记账，恢复联网后自动回填授权服务；不伪造次数，也不重复提交。状态栏会显示“离线宽限 / 已联网”。\n- 新配置项（`auth/auth-config.json`，全部可选）：`endpoints` / `update_manifest_urls` / `update_artifact_mirrors` / `offline_grace_hours` / `prefer_ipv4` / `enable_tls13` / `download_connections` / `probe_timeout_ms` / `connect_timeout_ms`。填入自己的镜像主机即可生效，未替换的占位符（MIRROR_HOST 等）会被自动忽略。\n- 其余功能完全不动：商城 / 装备 / 传家宝 / 宝库 / 称号 / 福利 / 关卡 / 成就等发放逻辑、写入槽位与持久化路径保持不变。\n- 地图文件依旧**永不改写**：写入前先校验 EntryMap 哈希，只有与钉住的纯净版一致才继续。\n- 平台购买、支付、订单、回执仍为只读。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.25 → 直接点“检查更新”（无需梯子）→ 进入地图 → 读取并备份 → 应用 → 退出重进验证。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.25/AnqilaTool.exe",
+  "mirrors": [
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.25/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.25/AnqilaTool.exe",
+    "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
+  ],
+  "size": 26472528,
+  "sha256": "4404E4000FA42A2A0FEE8FDDAFE3C19249952CAA41844C02CBCB2EEE0D3E52F8",
+  "core_sha256": "C44A5AAB716FB5C5099B9ECE8A39D3C48B8EC855ACE3BFE65E28B0D47AF60F3A",
+  "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/574249374",
+  "package": "single-file Authenticode-signed launcher; China direct mirror (ghproxy) + Cloudflare origin"
+}
