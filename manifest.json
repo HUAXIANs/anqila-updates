@@ -1,22 +1,27 @@
 {
-  "schema": 2,
-  "product": "anqila-y3-204521",
-  "channel": "stable",
-  "version": "1.0.42",
-  "update_protocol": 2,
-  "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-09-21T13:38:50.9227409Z",
-  "release_notes": "# 安其拉 1.0.42 更新简要\n\n- 例行维护与稳定性改进：界面、操作方式与使用流程不变。\n- 更新下载与授权连接更稳，常见网络环境差异不影响正常使用。\n- 功能范围与 1.0.41 一致：传家宝批量定制、词条数值定制、设置页、操作记录、授权与更新流程均未改动。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.42 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.42/AnqilaTool.exe",
-  "size": 29766064,
-  "sha256": "0A514D8C89DC8D7FF625CD38A8608837BDCA99B2737EBD50BB24553815198D42",
-  "core_sha256": "72614CA432CE6244175CA99E75D2B6260D015532CE4BC657A33E5BB9094A916F",
-  "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/579115579",
-  "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
-  "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.42/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.42/AnqilaTool.exe",
-    "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
-  ]
+    "schema":  2,
+    "product":  "anqila-y3-204521",
+    "channel":  "stable",
+    "version":  "1.0.43",
+    "update_protocol":  2,
+    "legacy_upgrade_version":  "2.0.0.0",
+    "published_utc":  "2026-09-21T16:52:58.8304426Z",
+    "release_notes":  "# 安其拉 1.0.43 更新简要\n\n- 修好「无论有没有梯子都提示网络请求失败」（本次重点）：授权与更新的连接线路全面重做，国内直连、境外网络、开代理、不开代理都能正常登录、检查更新与使用。\n  - 不开梯子：自动挑选当前网络真正连得上的授权入口，不再因为个别地址解析异常、单个地址超时或连接被重置就整体报错。\n  - 开了梯子：直连走不通时自动改用系统代理，不需要手动填代理地址或端口。\n  - 连接超时、被中断、被中间设备重置都算「换线路」而不是「失败退出」，会自动换下一个入口继续。\n- 检查更新与授权现在共用同一套线路策略；更新清单与安装包继续支持多镜像自动切换。\n- 已激活授权断网时依旧可用（离线宽限 72 小时），联网后自动回填。\n- 功能范围与 1.0.42 完全一致：传家宝批量定制、词条数值定制、设置页（皮肤 / 账号 / 头像）、操作记录、授权与更新流程的界面与操作方式均未改动。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.43 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.43/AnqilaTool.exe",
+    "size":  29796128,
+    "sha256":  "675A3652102777423C1231C5148B07C292800CE6390EE88A9115ADF04DEDF1E7",
+    "core_sha256":  "8EEB115C761BDF28BB180862E910F81D8AED900085AD52FC5DFEFDA959E58D51",
+    "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
+    "auth_endpoints":  [
+                           "https://anqila-license.pages.dev",
+                           "https://anqila-license.adrianchirs8.workers.dev",
+                           "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
+                       ],
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/579441181",
+    "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
+    "mirrors":  [
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.43/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.43/AnqilaTool.exe",
+                    "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
+                ]
 }
