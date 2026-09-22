@@ -2,24 +2,30 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.45",
+    "version":  "1.0.46",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-21T22:59:18.9182558Z",
-    "release_notes":  "# 安其拉 1.0.45 更新简要\n\n- 修好「不开梯子时登录 / 读取并应用一会儿超时、一会儿报无法连接授权服务器」（本次重点）：\n  - 以前只要某一条线路地址连着失败几次，工具就会暂时把整条直连线路放弃、转去找代理；没开代理时就只剩报错。现在只有真正连不上的那一个地址会被跳过，其它可用地址继续顶上，直连不会被整体放弃。\n  - 线路检查由逐个等待改成同时进行，不再因为其中一个地址不通就让操作先卡十几秒。\n  - 开了代理和不开代理都一样：直连优先，直连确实不通才走系统代理，不需要手动填代理地址或端口。\n  - 某条线路短暂抖动后会自己恢复，不会因为一次抖动就一直不用它。\n- 可用线路地址表随更新清单一并下发：以后换地址、加地址都不需要重新发布客户端。\n- 功能范围与 1.0.44 完全一致：传家宝批量定制、词条数值定制、设置页（皮肤 / 账号 / 头像）、操作记录、授权与更新流程的界面与操作方式均未改动；存档读取、写入与备份逻辑未改动。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.45 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.45/AnqilaTool.exe",
-    "size":  29805680,
-    "sha256":  "4EBAE7C81608DFB3946783F35548877732F99B814959219355E887E74BCD7B52",
-    "core_sha256":  "514F85F89A4311CE4659AF610C9D0FF31705018061711550FDF91A91EC892853",
+    "published_utc":  "2026-09-22T09:56:31.7700936Z",
+    "release_notes":  "# 安其拉 1.0.46 更新简要\r\n\r\n- 修好「不开梯子时仍有一部分操作会报时超、连不上或断开」（本次重点）：\r\n  - 大陆对 Cloudflare 边缘的 IPv4 地址是整段、分时段封锁的。以前工具只备着 IPv4 直连地址，这一段被封时就没有别的路可走。现在同时备好 IPv6 直连地址，并且把两条路放在同一批里同时尝试，哪条通就用哪条。\r\n  - 实测（本机无梯子、直接连公网）：连续 20 次「读取并应用」同样的请求 20/20 成功，中位 1.1 秒、95 分位 1.9 秒；开着梯子同样是 20/20。\r\n- 回包在跨境链路上被丢掉时不再直接报错：同一份请求会按原样重发一次，服务端认得出这是同一次操作、返回同一份授权，不会多扣一次次数，也不会把已完成的操作当成重复提交。\r\n- 「连得上但拿不到回包」的地址会被快速降权：下一次直接换其它地址，不再在同一条半死线路上反复重试；短暂抖动过后会自己恢复。\r\n- 有梯子和没梯子行为一致：直连优先，直连确实不通才走系统代理，不需要手动填代理地址或端口。\r\n- 同步适配 2026-09-22 地图更新：商城新增 7 条条目（双节礼包、双节礼盒、双节礼物、绝仙剑、诛仙阵图、陷仙剑、重生月饼大礼盒），其中 3 条为可发放礼包（传说密钥 / 远古密钥 / 符文石），工具的商城发放范围已按新表同步并逐条核验；其余条目按地图自身的属性 / 记录方式处理，工具只读不写。\r\n- 本次地图更新的入口地图、存档结构、脚本与功能表均未变化，因此不需要升级地图相关绑定，已装好的用户继续用同一套读取 / 写入流程即可。\r\n- 功能范围、界面与性能与 1.0.45 完全一致：传家宝批量定制、词条数值定制、设置页（皮肤 / 账号 / 头像）、操作记录、授权与更新流程都没改；存档读取、写入与备份逻辑也没改。\r\n\r\n更新步骤：关掉旧版与游戏 → 打开 1.0.46 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.46/AnqilaTool.exe",
+    "size":  29810624,
+    "sha256":  "256017AFB452224262B8BFC890129B62108EE8B3464BF7278CF453BCB9EC87A0",
+    "core_sha256":  "744B6A155374E0DBF43A9358277B5346EA28E5EE9C4D843F3CCB656D17AB7102",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila-license.pages.dev",
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/580032863",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/581085193",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
+                     "2606:4700:310c::ac42:2c72",
+                     "2606:4700:310c::ac42:2f8e",
+                     "2606:4700:3033::ac43:892a",
+                     "2606:4700:3034::6815:2e2c",
+                     "2a06:98c1:3120::3",
+                     "2a06:98c1:3121::3",
                      "104.18.38.10",
                      "172.66.47.142",
                      "104.16.47.45",
@@ -42,8 +48,8 @@
                      "172.64.145.202"
                  ],
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.45/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.45/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.46/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.46/AnqilaTool.exe",
                     "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
                 ]
 }
