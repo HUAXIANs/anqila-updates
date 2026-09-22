@@ -2,22 +2,22 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.46",
+    "version":  "1.0.47",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-22T09:56:31.7700936Z",
-    "release_notes":  "# 安其拉 1.0.46 更新简要\r\n\r\n- 修好「不开梯子时仍有一部分操作会报时超、连不上或断开」（本次重点）：\r\n  - 大陆对 Cloudflare 边缘的 IPv4 地址是整段、分时段封锁的。以前工具只备着 IPv4 直连地址，这一段被封时就没有别的路可走。现在同时备好 IPv6 直连地址，并且把两条路放在同一批里同时尝试，哪条通就用哪条。\r\n  - 实测（本机无梯子、直接连公网）：连续 20 次「读取并应用」同样的请求 20/20 成功，中位 1.1 秒、95 分位 1.9 秒；开着梯子同样是 20/20。\r\n- 回包在跨境链路上被丢掉时不再直接报错：同一份请求会按原样重发一次，服务端认得出这是同一次操作、返回同一份授权，不会多扣一次次数，也不会把已完成的操作当成重复提交。\r\n- 「连得上但拿不到回包」的地址会被快速降权：下一次直接换其它地址，不再在同一条半死线路上反复重试；短暂抖动过后会自己恢复。\r\n- 有梯子和没梯子行为一致：直连优先，直连确实不通才走系统代理，不需要手动填代理地址或端口。\r\n- 同步适配 2026-09-22 地图更新：商城新增 7 条条目（双节礼包、双节礼盒、双节礼物、绝仙剑、诛仙阵图、陷仙剑、重生月饼大礼盒），其中 3 条为可发放礼包（传说密钥 / 远古密钥 / 符文石），工具的商城发放范围已按新表同步并逐条核验；其余条目按地图自身的属性 / 记录方式处理，工具只读不写。\r\n- 本次地图更新的入口地图、存档结构、脚本与功能表均未变化，因此不需要升级地图相关绑定，已装好的用户继续用同一套读取 / 写入流程即可。\r\n- 功能范围、界面与性能与 1.0.45 完全一致：传家宝批量定制、词条数值定制、设置页（皮肤 / 账号 / 头像）、操作记录、授权与更新流程都没改；存档读取、写入与备份逻辑也没改。\r\n\r\n更新步骤：关掉旧版与游戏 → 打开 1.0.46 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.46/AnqilaTool.exe",
-    "size":  29810624,
-    "sha256":  "256017AFB452224262B8BFC890129B62108EE8B3464BF7278CF453BCB9EC87A0",
-    "core_sha256":  "744B6A155374E0DBF43A9358277B5346EA28E5EE9C4D843F3CCB656D17AB7102",
+    "published_utc":  "2026-09-22T12:30:12.1360792Z",
+    "release_notes":  "# 安其拉 1.0.47 更新简要\n\n- 修好「工具用完之后地图文件损坏」（本次重点）：\n  - 根因：旧的完整性检查把工具自带的旧版地图入口文件当成\"正确版本\"，一旦发现与游戏目录里的不一致，就直接把旧文件覆盖回去。平台因此判定地图包被改写，触发整包重新校验下载，玩家看到的就是\"地图文件损坏，请重新下载\"。\n  - 现在工具对地图包只读：只校验、只留存证据、不改写其中任何一个文件。发现地图包版本与工具固定版本不一致时，记录下来交给地图自身的结构校验判断，不再动手改；发现地图包读不出来时，在写入前停止并提示让平台修复。\n  - 实测：完整性门禁在正常状态下约 0.2 秒（首次约 1.5 秒，之后走本地缓存），只校验 5 个被固定的地图文件（合计约 8.5 MB），不整树扫描，不影响游戏性能。\n- 被旧版本改坏过的地图，恢复方式：\n  - 回平台重新进入一次地图，平台会自动校验并修复地图包；或运行工具目录下的 `tools\\repair_map_package.ps1`（需要一次管理员确认），它只把平台自己的原始字节放回去，写入前后都校验哈希，遇到不认识的地图版本会直接拒绝，不会误改。\n- 平台推送新地图内容时不再\"猜\"：\n  - 工具会记录平台的新版本、留存原始字节供复核，并按地图自身的触发器与函数签名判断能否继续使用；签名有变化就在写入前停止，绝不会写坏存档。\n- 功能、界面与性能与 1.0.46 完全一致：商城发放、传家宝批量定制、词条数值定制、设置页、操作记录、授权与更新流程都没有改动。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.47 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.47/AnqilaTool.exe",
+    "size":  40651248,
+    "sha256":  "0C17CEEA59FD1D7708C7940C41D32B55A8CE86AB854217DB8CB3B12744EFA92E",
+    "core_sha256":  "3B3A7049851299D3F7756171B8CEC32AC221F5696202741A4742C7FCD71496A5",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila-license.pages.dev",
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/581085193",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/581356243",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "2606:4700:310c::ac42:2c72",
@@ -48,8 +48,8 @@
                      "172.64.145.202"
                  ],
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.46/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.46/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.47/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.47/AnqilaTool.exe",
                     "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
                 ]
 }
