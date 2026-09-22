@@ -2,22 +2,22 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.48",
+    "version":  "1.0.49",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-22T17:08:00.0134815Z",
-    "release_notes":  "# 安其拉 1.0.48 更新简要\r\n\r\n本次更新只解决一件事：**有代理、没代理，都要能用，都要快**。\r\n\r\n- 有代理时优先走代理（一次请求直达）：\r\n  - 检测到系统代理就直接用它发唯一一次请求，不再先拿直连线路试一轮。实测（代理可用，20 次连续请求）：主入口 20/20 成功、全部走代理，中位 0.55 秒，P95 0.92 秒。\r\n  - 代理软件已经退出、系统里却还留着代理设置时，0.4 秒内确认端口后面没人，随即改走直连，不再每次点击先撞一次死代理。实测（代理设置指向已退出的代理，20 次）：主入口 19/20 直连成功，中位 1.1 秒。\r\n- 没有代理时（中国大陆直连）：\r\n  - 边缘入口池按实测重排：只保留最近一次真的能完成 TLS 握手并回包的地址（26 个候选收敛到 10 个）。握手很快但会被重置、以及完全不通的地址，不再占用竞速名额——这是过去\"无代理十几秒\"的直接来源。\r\n  - 单个候选的等待预算 3.5 秒 → 1.5 秒（实测赢家 1 秒左右完成，多出来的 2 秒只会喂给死地址）。\r\n  - 授权与执行两条链路都是\"记住上次成功的线路，下一次第一批就用它\"，工具重启后同样生效。\r\n  - 被域名污染的 workers.dev 入口降级为最后兜底，不再挡在其他入口前面。\r\n  - 实测（无代理直连，中国大陆家宽，20 次连续请求）：主入口 17/20 成功，中位 1.0 秒，P95 1.8 秒。没成功的那几次是\"请求已经发出、回包被链路丢掉\"，按一次性凭证的规则本机不会自动重发，再点一次即成功，另有离线宽限兜底。\r\n- 点击与联网解耦：\r\n  - 本机会话保持\"热\"状态，后台提前续期；点击\"读取 / 读取并应用\"时不再额外做一次会话校验往返，点一下只剩唯一一次业务请求。\r\n  - 权限判定没有下移：会话有效性、次数是否足够仍然 100% 由服务器在每次操作时判定，本机缓存不会带来任何额外权限。\r\n  - 连不上服务器时仍然是原来的离线宽限，恢复联网后自动回填。\r\n- 新增边缘入口池每日测速工具（`tools\\tune_edge_ips.py` / `tools\\tune_edge_ips.ps1`）：实测 → 只保留能完成 TLS 的地址 → 写回配置并随更新清单下发，无需重新发布 EXE。\r\n- 功能、界面与 1.0.47 完全一致：商城发放、传家宝批量定制、词条数值定制、设置页、操作记录、地图包只读门禁都没有改动。\r\n\r\n更新步骤：关掉旧版与游戏 → 打开 1.0.48 → 点\"检查更新\" → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.48/AnqilaTool.exe",
-    "size":  40655248,
-    "sha256":  "0A8CA84A29934DE8344B4629D5538782B49DE4D1A89685022B13A6218FA0C568",
-    "core_sha256":  "AA34102430DA787AC1F86900512A3797B1A8E0D93B933E2BA434E1BB483F71B2",
+    "published_utc":  "2026-09-22T19:42:27.0505739Z",
+    "release_notes":  "# 安其拉 1.0.49 更新简要\r\n\r\n本次更新只解决一件事：**点“读取 / 备份 / 读取并应用”不再报错，有没有代理都要能用，而且一条记录出问题不再拖垮所有记录。**\r\n\r\n- 修好“有代理能用、没代理不行”的执行链路：之前在没有代理时，授权请求只试第一个入口，第一个入口不通整次就失败，界面只会报“服务没有回包”。现在没有代理时会按实测可达顺序继续试下一个入口（只有连一个字节都没发出去的请求才允许换入口），国内直连不再被单个入口挡住；请求一旦已经发出仍然只发一次，不会重复消耗授权。\r\n- 修好“备份 / 应用点完报错、云同步一直重试”的真因：操作记录里的传家宝发放条目，工具早先把实例编号当数字写进记录，而服务端只接受文本，整份记录被判无效；更糟的是这一条坏记录会把整条补传队列卡死，排在它后面的记录全部传不上去。\r\n  - 工具改为按文本写入实例编号；\r\n  - 服务端同时兼容历史版本已经写出的数字编号（同一个编号，两种写法都收）；\r\n  - 万一再出现“这一条记录本身不被接受”的情况，工具会把这一条单独隔离并留下可核对的依据，后面的记录照常补传，不再全体停摆；会话过期、服务端临时故障仍然保留记录并自动重试，不会丢记录。\r\n  - 实测：本机 218 条历史记录中 112 条待补传，用服务端真实校验逻辑逐条验证：修前 107/112 通过（5 条被拒），修后 **112/112 通过**。\r\n- 回归：记录补传（含隔离并继续）、服务端记录校验、工具与服务之间的记录契约、payload 语法与功能面指纹全部通过；稳定通道功能面指纹未变化，本次没有改动任何功能与界面。\r\n- 功能、界面与 1.0.48 完全一致。\r\n\r\n更新步骤：关掉旧版与游戏 → 打开 1.0.49 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.49/AnqilaTool.exe",
+    "size":  40656192,
+    "sha256":  "66D3049E0F9C1F77D18F895019593F460D7F53AB96ADABF4DA2A5755E354652C",
+    "core_sha256":  "0669057BDCB4FA78BC86959E9A9E4ACA0D5F66CE800E94DC2BC651A5EBAB6853",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila-license.pages.dev",
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/581809049",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/582114215",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.17.0.1",
@@ -32,8 +32,8 @@
                      "2606:4700:3033::ac43:892a"
                  ],
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.48/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.48/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.49/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.49/AnqilaTool.exe",
                     "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
                 ]
 }
