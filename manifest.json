@@ -2,22 +2,22 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.49",
+    "version":  "1.0.50",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-22T19:42:27.0505739Z",
-    "release_notes":  "# 安其拉 1.0.49 更新简要\r\n\r\n本次更新只解决一件事：**点“读取 / 备份 / 读取并应用”不再报错，有没有代理都要能用，而且一条记录出问题不再拖垮所有记录。**\r\n\r\n- 修好“有代理能用、没代理不行”的执行链路：之前在没有代理时，授权请求只试第一个入口，第一个入口不通整次就失败，界面只会报“服务没有回包”。现在没有代理时会按实测可达顺序继续试下一个入口（只有连一个字节都没发出去的请求才允许换入口），国内直连不再被单个入口挡住；请求一旦已经发出仍然只发一次，不会重复消耗授权。\r\n- 修好“备份 / 应用点完报错、云同步一直重试”的真因：操作记录里的传家宝发放条目，工具早先把实例编号当数字写进记录，而服务端只接受文本，整份记录被判无效；更糟的是这一条坏记录会把整条补传队列卡死，排在它后面的记录全部传不上去。\r\n  - 工具改为按文本写入实例编号；\r\n  - 服务端同时兼容历史版本已经写出的数字编号（同一个编号，两种写法都收）；\r\n  - 万一再出现“这一条记录本身不被接受”的情况，工具会把这一条单独隔离并留下可核对的依据，后面的记录照常补传，不再全体停摆；会话过期、服务端临时故障仍然保留记录并自动重试，不会丢记录。\r\n  - 实测：本机 218 条历史记录中 112 条待补传，用服务端真实校验逻辑逐条验证：修前 107/112 通过（5 条被拒），修后 **112/112 通过**。\r\n- 回归：记录补传（含隔离并继续）、服务端记录校验、工具与服务之间的记录契约、payload 语法与功能面指纹全部通过；稳定通道功能面指纹未变化，本次没有改动任何功能与界面。\r\n- 功能、界面与 1.0.48 完全一致。\r\n\r\n更新步骤：关掉旧版与游戏 → 打开 1.0.49 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.49/AnqilaTool.exe",
-    "size":  40656192,
-    "sha256":  "66D3049E0F9C1F77D18F895019593F460D7F53AB96ADABF4DA2A5755E354652C",
-    "core_sha256":  "0669057BDCB4FA78BC86959E9A9E4ACA0D5F66CE800E94DC2BC651A5EBAB6853",
+    "published_utc":  "2026-09-22T20:53:01.0950214Z",
+    "release_notes":  "# 安其拉 1.0.50 更新简要\n\n本次更新只做一件事：**把中国大陆“不挂代理”的速度再压一档，挂代理时的体验一点不动。**\n\n- 无代理时，工具现在会记住“上一次直连真正拿到回包”的那个入口。接下来 15 分钟内，点一下就是一次往返，不再每次先花约一秒做一次线路预探测；刚装好/刚开机的第一次仍然会探测一次来选线路，之后一直走快路径。\n- “拿到回包”只看有没有收到服务端答复，不看业务是否成功：哪怕这一次是因为额度、签名或版本被服务端拒绝，只要线路通了就会记下来，下一次点击同样走快路径。\n- 挂着代理时成功的入口不会被当成“直连可用”，避免下一次无代理先把一个连不通的入口耗满超时。\n- 记忆过期、文件损坏或被截断时一律当作“没有记忆”处理，自动退回原来的探测流程；不会因此报错，也不会改变授权判定。\n- 边缘线路如果出现“能连上、但握手一直不返回”的情况，现在会被迅速判死并换下一批候选，不再长时间挂着；连续使用也不会越用越慢。\n- 有代理时与 1.0.49 完全一致：仍然优先走代理、一次请求直达。\n\n**实测（本机，关闭系统代理，连续 20 次操作，同一台电脑同一网络）**\n\n- 1.0.49：20/20 成功，中位 **1.67 秒**。\n- 1.0.50：19/20 成功，中位 **0.96 秒**（约快 43%）；除首次 1.5 秒外，其余稳定在 0.83–1.43 秒；唯一一次失败是瞬时线路抖动，工具换入口后下一次立即恢复。\n- 有代理（本机开梯子，连续 20 次）：20/20 成功，约 0.20 秒，与 1.0.49 一致，没有变化。\n\n回归全部通过：路由预算与入口记忆（正常/过期/损坏/缺文件四种情形）、无回包时换入口、一次性授权不重发、证书校验与 TLS1.2+ 保持不变；功能与界面与 1.0.49 完全一致。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.50 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.50/AnqilaTool.exe",
+    "size":  40657312,
+    "sha256":  "E56EB3A27DE4C9697101E1B5F26BAD090EC8C15AF1012A21E00AABA8DF3C9E08",
+    "core_sha256":  "7CEC8AB511E923FED6883D4366122497CED4C1AFAC6ECD362F880EC95E2DCD11",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila-license.pages.dev",
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/582114215",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/582226151",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.17.0.1",
@@ -32,8 +32,8 @@
                      "2606:4700:3033::ac43:892a"
                  ],
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.49/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.49/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.50/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.50/AnqilaTool.exe",
                     "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
                 ]
 }
