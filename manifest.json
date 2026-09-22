@@ -2,22 +2,22 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.50",
+    "version":  "1.0.51",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-22T20:53:01.0950214Z",
-    "release_notes":  "# 安其拉 1.0.50 更新简要\n\n本次更新只做一件事：**把中国大陆“不挂代理”的速度再压一档，挂代理时的体验一点不动。**\n\n- 无代理时，工具现在会记住“上一次直连真正拿到回包”的那个入口。接下来 15 分钟内，点一下就是一次往返，不再每次先花约一秒做一次线路预探测；刚装好/刚开机的第一次仍然会探测一次来选线路，之后一直走快路径。\n- “拿到回包”只看有没有收到服务端答复，不看业务是否成功：哪怕这一次是因为额度、签名或版本被服务端拒绝，只要线路通了就会记下来，下一次点击同样走快路径。\n- 挂着代理时成功的入口不会被当成“直连可用”，避免下一次无代理先把一个连不通的入口耗满超时。\n- 记忆过期、文件损坏或被截断时一律当作“没有记忆”处理，自动退回原来的探测流程；不会因此报错，也不会改变授权判定。\n- 边缘线路如果出现“能连上、但握手一直不返回”的情况，现在会被迅速判死并换下一批候选，不再长时间挂着；连续使用也不会越用越慢。\n- 有代理时与 1.0.49 完全一致：仍然优先走代理、一次请求直达。\n\n**实测（本机，关闭系统代理，连续 20 次操作，同一台电脑同一网络）**\n\n- 1.0.49：20/20 成功，中位 **1.67 秒**。\n- 1.0.50：19/20 成功，中位 **0.96 秒**（约快 43%）；除首次 1.5 秒外，其余稳定在 0.83–1.43 秒；唯一一次失败是瞬时线路抖动，工具换入口后下一次立即恢复。\n- 有代理（本机开梯子，连续 20 次）：20/20 成功，约 0.20 秒，与 1.0.49 一致，没有变化。\n\n回归全部通过：路由预算与入口记忆（正常/过期/损坏/缺文件四种情形）、无回包时换入口、一次性授权不重发、证书校验与 TLS1.2+ 保持不变；功能与界面与 1.0.49 完全一致。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.50 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.50/AnqilaTool.exe",
-    "size":  40657312,
-    "sha256":  "E56EB3A27DE4C9697101E1B5F26BAD090EC8C15AF1012A21E00AABA8DF3C9E08",
-    "core_sha256":  "7CEC8AB511E923FED6883D4366122497CED4C1AFAC6ECD362F880EC95E2DCD11",
+    "published_utc":  "2026-09-22T23:54:52.9678588Z",
+    "release_notes":  "# 安其拉 1.0.51 更新简要\r\n\r\n本次更新只做一件事：**把“换线路不用重发客户端”这条链路打通，并在编辑器与执行器两侧统一入口表。**\r\n\r\n- 之前：更新清单可以下发新的授权入口，但执行器（真正执行“读取 / 读取并应用”的那一侧）只认随客户端一起发布的地址。结果是编辑器读到了新入口、执行器读不到；在部分大陆网络下就表现为“能登录、点应用仍然连接失败”。\r\n- 现在：编辑器与执行器读同一份下发表。清单下发一次，两侧同时生效，不需要重新下载客户端。\r\n- 新增“以下发表为准”开关：运营侧声明后，下发的入口排在最前，随客户端发布的旧地址退到末尾只做兜底。换域名、停用已经不通的入口，都能立刻生效。\r\n- 入口现在支持自定义端口（例如 8443）。某些网络会针对 443 做按端口限速，这时可以换到备用端口继续走同一条线路，不需要额外服务器。\r\n- 只下发边缘地址、不带入口表的清单，不会把这个开关悄悄关掉；下发表缺失、损坏或含非加密地址时一律安全退化，不会让工具整体不可用。\r\n- 新增“线路矩阵”自检：同一批边缘地址分别用不同域名各探一次，二十秒内判断到底是“域名被拦”还是“地址被拦”，并在同目录输出一份 JSON 报告。\r\n\r\n**实测（本机直连，不挂代理，十个边缘地址各探一次）**\r\n\r\n- 对照域名：3 个地址完成握手并拿到回包（同一批地址是通的）。\r\n- pages.dev 入口：8/10 可用。\r\n- workers.dev 入口：0/10 —— 其中 8 次在 200 毫秒左右被重置。\r\n- supabase.co 入口：0/10 —— 其中 9 次被重置。\r\n\r\n同一批地址用对照域名能完成握手和回包、换成这两个域名就握不上手，说明问题出在域名这一层，不是地址被封。这也解释了为什么有的机器正常、有的机器超时：不同地区与运营商的拦截名单并不一致。\r\n\r\n回归全部通过：入口表下发（正常 / 严格 / 损坏 / 缺文件）、入口带端口的连接与请求头、无回包时换入口、一次性授权不重发、证书校验与 TLS1.2+ 保持不变；挂着代理时的体验与 1.0.50 完全一致。\r\n\r\n更新步骤：关掉旧版与游戏 → 打开 1.0.51 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.51/AnqilaTool.exe",
+    "size":  40661104,
+    "sha256":  "A2DA8A185AB3DAA2779E30376D7F35372E6056FCB828944406F140D6FADA3286",
+    "core_sha256":  "DBCDEC4173FABA39DBC1EA24833254230711704CA8C89A6A144D95E440AEACD0",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila-license.pages.dev",
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/582226151",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/582508768",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.17.0.1",
@@ -32,8 +32,8 @@
                      "2606:4700:3033::ac43:892a"
                  ],
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.50/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.50/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.51/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.51/AnqilaTool.exe",
                     "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
                 ]
 }
