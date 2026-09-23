@@ -2,22 +2,22 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.53",
+    "version":  "1.0.54",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-23T17:24:29.4318489Z",
-    "release_notes":  "# 安其拉 1.0.53 更新简要\n\n本次更新把「回滚」补成完整功能：每一次操作都留下属于它自己的存档快照，KK 操作记录里可以直接回滚到任意一次「读取并备份 / 应用」之前的状态。\n\n- 之前的问题：每个账号只有一个备份槽位，「读取并备份」和「应用」都会把它原地覆盖，所以回滚永远只能回到最近一次操作，回不到更早的那一次；历史记录里也没有指向具体备份的字段。\n- 现在：每次「读取并备份」、每次「应用」都会单独存一份不可分割的存档快照（应用保存的是写入前那一刻的状态），并记录操作时间、KK 账号、角色、地图版本与文件校验值。\n- 用法：在「KK 操作记录」里选中一条你自己账号的「读取并备份 / 应用」记录，点「回滚到此次之前」，确认后当前存档会完整恢复到那次操作之前的状态。按钮只有在这次操作的快照确实存在、并且属于当前登录的 KK 账号和角色时才可点，取不到就不会让你点进去再报错。\n- 账号云端副本：快照会随操作记录一起存到你的账号云端，换一台电脑登录同一个工具账号，切到「云端（跨电脑）」也能取回那次快照再回滚。云侧暂时还没有这条通道、或存储还没就绪时，工具会静默退避（不会反复重试打扰服务端），只保留本机快照，不弹任何错误，也不影响任何操作。\n- 防呆：快照被改动一个字节、文件丢失、换了 KK 账号、换了角色、换了地图版本，回滚都会被拒绝并说明原因，而不是悄悄回滚到别的存档。每个账号本机保留最新 100 份快照，超出部分按时间从旧到新清理，并留下清理记录。\n- 顺带修掉一个写入稳定性问题：文件刚写好时可能被另一个程序（杀毒、索引）短暂占用，之前会让这一次备份或回滚直接失败。现在是先重试、必要时退回更安全的替换方式。本机实测：连续 300 次写入，直接替换出现 1 次失败；改进后同一场景 0 次失败，并且回归测试固定住了这个场景。\n- 界面、功能范围、存档读写范围与 1.0.52 完全一致；地图包仍然只读。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.53 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.53/AnqilaTool.exe",
-    "size":  44296208,
-    "sha256":  "81314D842CD788E1FADCEBBA6906F2B957265E940EDF1F087FA5CBD55DFE7985",
-    "core_sha256":  "072CF3397020794995A52F1456A9E45E554A9EEF5A44AD04D1FBCD1001ADECA8",
+    "published_utc":  "2026-09-23T21:49:56.1418640Z",
+    "release_notes":  "# 安其拉 1.0.54 更新简要\n\n本次更新把「账号战力」做成随时看得见的数字：读取后立刻显示目前战力，应用后立刻显示这一局加了多少。\n\n- 读取即显示：点「读取并备份」之后，工具立即按地图自己那条公式（80 项属性逐项：Σ（属性值 − 基准）× 权重）把账号战力算出来并显示，同时列出贡献最大的几项来源，以及地图 180 秒 / 360 秒两条退出线还差多少、或者已经超出多少。\n- 应用即结算：点「应用」之后，工具在写档前和写档后各测一次，直接给出「本局新增战力 +N」，并列出具体是哪几项属性变化。\n- 口径与地图一致：权重直接读地图运行时的「账号战力计算」表，地图更新改了权重这里自动跟着走；有项目读不出来时会明确标注「有项目没读到，合计偏小」，不猜数、不拿 0 冒充完整。\n- 有一件事必须说清楚：地图只在进图（选择难度）那一刻把存档物化成局内属性。所以在重新进图之前点「应用」，局内属性还是旧的，这时工具会明确写成「局内属性还没按新存档重算」，并在你下一次读取时给出真正的净增，而不是给一个看起来精确、其实还没到账的数字。\n- 只读：战力测量只读局内属性与地图自己的记录槽位，不写存档、不写地图包、不影响任何一次写入与回滚；算不出来时也只是少显示一段说明，不会影响读取和应用。\n- 界面、功能范围、存档读写范围、更新域名与 1.0.53 完全一致；地图包仍然只读。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.54 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.54/AnqilaTool.exe",
+    "size":  44317920,
+    "sha256":  "751EDDE31493E0CF05C8D2662D8F26DEBA29542B8C64F21FF8014FD921838548",
+    "core_sha256":  "51E3CAFD4205D80567D72F5D7691D3BD89254CA2BDC20F9D63BDD0B6A3063A9A",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila-license.pages.dev",
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/584255412",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/584643252",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "2606:4700:3034::6815:2e2c",
@@ -32,8 +32,8 @@
                      "2606:4700:310c::ac42:2f8e"
                  ],
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.53/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.53/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.54/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.54/AnqilaTool.exe",
                     "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
                 ]
 }
