@@ -2,15 +2,15 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.60",
+    "version":  "1.0.61",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-24T14:14:42.6752437Z",
-    "release_notes":  "修好「重铸石」等账本类物品在地图更新后写入被误判失败的问题；界面与操作方式不变。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.60/AnqilaTool.exe",
-    "size":  13489504,
-    "sha256":  "C92DF418DB76548E3DC66DFD7DD79A56A3BCDDE96E20740DCD7A940CD2B240B8",
-    "core_sha256":  "4DA3AFB64BEEF82B82418C4DB42D7F22705E9635F8786C73C9B6896AC715F508",
+    "published_utc":  "2026-09-24T17:38:31.6779840Z",
+    "release_notes":  "修好部分电脑不挂加速时点「应用」时授权校验收不到回包、操作中断的问题：这类网络环境下现在也能正常完成，读取与登录本来就通的环境不受影响。界面、功能范围与操作步骤完全不变，保护强度不变。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.61/AnqilaTool.exe",
+    "size":  13503344,
+    "sha256":  "F1053F1D19361512088102C6FC76F9602674EFF6B0B23914ABCA78E9292DC09E",
+    "core_sha256":  "A0E49BA7BA7CA8A418795B91DB2FB6BA0B03527358103D4BDCA81891729A41D2",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila.xyz",
@@ -19,7 +19,7 @@
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/586106784",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/586471687",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.27.0.1",
@@ -123,12 +123,17 @@
                                   "version":  "1.0.60",
                                   "published_utc":  "2026-09-24T21:40:00Z",
                                   "summary":  "修好「重铸石」等账本类物品在地图更新后写入被误判失败的问题；界面与操作方式不变。"
+                              },
+                              {
+                                  "version":  "1.0.61",
+                                  "published_utc":  "2026-09-24T17:04:08Z",
+                                  "summary":  "修好部分电脑不挂加速时点「应用」时授权校验收不到回包、操作中断的问题：这类网络环境下现在也能正常完成，读取与登录本来就通的环境不受影响。界面、功能范围与操作步骤完全不变，保护强度不变。"
                               }
                           ],
     "release_archive_note":  "历史版本简要已归档到发行页。",
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.60/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.60/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.61/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.61/AnqilaTool.exe",
                     "https://anqila.xyz/updates/AnqilaTool.exe"
                 ]
 }
