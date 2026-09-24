@@ -1,0 +1,41 @@
+{
+    "schema":  2,
+    "product":  "anqila-y3-204521",
+    "channel":  "stable",
+    "version":  "1.0.56",
+    "update_protocol":  2,
+    "legacy_upgrade_version":  "2.0.0.0",
+    "published_utc":  "2026-09-24T02:45:18.1286316Z",
+    "release_notes":  "本次更新修好了没挂代理时点「读取并备份」或「应用」偶发失败的问题。\n界面、操作步骤与只读范围都不变。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.56/AnqilaTool.exe",
+    "size":  44296016,
+    "sha256":  "C005896A90A22CFFB97FC78B9BB68EA59733BF818FE0AA28917C4E1E16DD4428",
+    "core_sha256":  "53B54867A0744DF4C7E9A2850166763B8758F17A669D5A638624275CDDB2075E",
+    "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
+    "auth_endpoints":  [
+                           "https://anqila.xyz",
+                           "https://api.anqila.xyz",
+                           "https://anqila-license.pages.dev",
+                           "https://anqila-license.adrianchirs8.workers.dev",
+                           "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
+                       ],
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/584992762",
+    "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
+    "edge_ips":  [
+                     "104.27.0.1",
+                     "104.16.160.1",
+                     "2606:4700:3034::6815:2e2c",
+                     "2606:4700:3033::ac43:892a",
+                     "2606:4700:310c::ac42:2f8e",
+                     "2606:4700:310c::ac42:2c72",
+                     "2a06:98c1:3121::3",
+                     "104.17.0.1",
+                     "104.24.0.1"
+                 ],
+    "auth_endpoints_strict":  true,
+    "mirrors":  [
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.56/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.56/AnqilaTool.exe",
+                    "https://anqila.xyz/updates/AnqilaTool.exe"
+                ]
+}
