@@ -2,15 +2,15 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.57",
+    "version":  "1.0.58",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-24T03:06:59.7664128Z",
-    "release_notes":  "更新简要改为概括显示；历史版本简要归档到发行页。界面与操作步骤不变。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.57/AnqilaTool.exe",
-    "size":  44300896,
-    "sha256":  "B301CCBFC9212EAA843CD35D19D5F1AE5FE7AB9CBCD151993198D670AC60B960",
-    "core_sha256":  "86ECBC94B462F6DFA25006C6D89975C26BE8BC53AA96D93CD575B30EBA83F44C",
+    "published_utc":  "2026-09-24T10:43:27.1455014Z",
+    "release_notes":  "适配 2026-09-24 地图更新：新增中秋活动内容（月饼、中秋商店、相关掉落与装备）。地图包仍然只读，功能与操作步骤不变。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.58/AnqilaTool.exe",
+    "size":  53177008,
+    "sha256":  "F4E516E647A15640FF5EF5DDDD5395F073EF9232D3F5E9FCB086423EF1AE1AA1",
+    "core_sha256":  "C96EDFB65C7096B87F4F98F99AF1A1F6C18F76870A3D582493311F61A1CC1B87",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila.xyz",
@@ -19,7 +19,7 @@
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/585041010",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/585739124",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.27.0.1",
@@ -108,12 +108,17 @@
                                   "version":  "1.0.57",
                                   "published_utc":  "2026-09-24T11:30:00Z",
                                   "summary":  "更新简要改为概括显示；历史版本简要归档到发行页。界面与操作步骤不变。"
+                              },
+                              {
+                                  "version":  "1.0.58",
+                                  "published_utc":  "2026-09-24T10:30:00Z",
+                                  "summary":  "适配 2026-09-24 地图更新：新增中秋活动内容（月饼、中秋商店、相关掉落与装备）。地图包仍然只读，功能与操作步骤不变。"
                               }
                           ],
     "release_archive_note":  "历史版本简要已归档到发行页。",
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.57/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.57/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.58/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.58/AnqilaTool.exe",
                     "https://anqila.xyz/updates/AnqilaTool.exe"
                 ]
 }
