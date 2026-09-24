@@ -2,38 +2,40 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.54",
+    "version":  "1.0.55",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-23T21:49:56.1418640Z",
-    "release_notes":  "# 安其拉 1.0.54 更新简要\n\n本次更新把「账号战力」做成随时看得见的数字：读取后立刻显示目前战力，应用后立刻显示这一局加了多少。\n\n- 读取即显示：点「读取并备份」之后，工具立即按地图自己那条公式（80 项属性逐项：Σ（属性值 − 基准）× 权重）把账号战力算出来并显示，同时列出贡献最大的几项来源，以及地图 180 秒 / 360 秒两条退出线还差多少、或者已经超出多少。\n- 应用即结算：点「应用」之后，工具在写档前和写档后各测一次，直接给出「本局新增战力 +N」，并列出具体是哪几项属性变化。\n- 口径与地图一致：权重直接读地图运行时的「账号战力计算」表，地图更新改了权重这里自动跟着走；有项目读不出来时会明确标注「有项目没读到，合计偏小」，不猜数、不拿 0 冒充完整。\n- 有一件事必须说清楚：地图只在进图（选择难度）那一刻把存档物化成局内属性。所以在重新进图之前点「应用」，局内属性还是旧的，这时工具会明确写成「局内属性还没按新存档重算」，并在你下一次读取时给出真正的净增，而不是给一个看起来精确、其实还没到账的数字。\n- 只读：战力测量只读局内属性与地图自己的记录槽位，不写存档、不写地图包、不影响任何一次写入与回滚；算不出来时也只是少显示一段说明，不会影响读取和应用。\n- 界面、功能范围、存档读写范围、更新域名与 1.0.53 完全一致；地图包仍然只读。\n\n更新步骤：关掉旧版与游戏 → 打开 1.0.54 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.54/AnqilaTool.exe",
-    "size":  44317920,
-    "sha256":  "751EDDE31493E0CF05C8D2662D8F26DEBA29542B8C64F21FF8014FD921838548",
-    "core_sha256":  "51E3CAFD4205D80567D72F5D7691D3BD89254CA2BDC20F9D63BDD0B6A3063A9A",
+    "published_utc":  "2026-09-24T01:42:14.6099298Z",
+    "release_notes":  "# 安其拉 1.0.55 更新简要\n\n本次更新做两件事：撤掉上一版刚加的「账号战力」显示，把大陆直连的登录、读取、应用与更新入口换到自有域名。\n\n- 撤掉账号战力：1.0.54 加的「读取即显示战力 / 应用即显示本局增加」给的不是这一局真实增加的战力，口径不可用，本次整段移除。界面与 1.0.53 完全一致。\n- 换用自有域名：工具自己的登录、读取、应用、记录同步与更新检查改走 `anqila.xyz`（备用 `api.anqila.xyz`）。原来那两个在大陆不好用的入口（`workers.dev`、Supabase 网关）降级为境外兜底，仍然保留，不删线路。\n- 无代理更快：直连时用最近一次实测能完成 TLS 与一次完整 HTTP 往返的 Cloudflare 边缘地址竞速，命中即用。本次按新域名重新实测，10 个候选里 9 个可用，单项在 0.87-1.09 秒完成 TCP + TLS + 一次完整 HTTP 往返；旧入口里 `workers.dev` 在这台机器上 9 个边缘只有 2 个能通。\n- 有代理的用户不受影响：仍然优先走系统代理 / PAC，入口顺序变化对代理路径没有影响。\n- 只读不变：地图包仍然只读；存档读写范围、功能范围、界面结构与 1.0.53 相同。\n\n更新步骤：关掉旧版与游戏 → 打开工具 → 点“检查更新” → 等下载完成后重新打开 → 进入地图 → 读取并备份 → 正常使用。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.55/AnqilaTool.exe",
+    "size":  44296960,
+    "sha256":  "5562A2871D1F3997A2AE84F71DB256EA35E155B63040207EF470C67DD95108AE",
+    "core_sha256":  "D58C5CDC51A9429B11A910D1B6604712BBA1EF85A99BB8D5287B488A35BF8163",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
+                           "https://anqila.xyz",
+                           "https://api.anqila.xyz",
                            "https://anqila-license.pages.dev",
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/584643252",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/584942265",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
+                     "104.27.0.1",
+                     "104.16.160.1",
                      "2606:4700:3034::6815:2e2c",
                      "2606:4700:3033::ac43:892a",
-                     "104.21.46.96",
-                     "104.24.0.1",
-                     "104.16.160.1",
-                     "104.17.0.1",
-                     "104.27.0.1",
+                     "2606:4700:310c::ac42:2f8e",
                      "2606:4700:310c::ac42:2c72",
                      "2a06:98c1:3121::3",
-                     "2606:4700:310c::ac42:2f8e"
+                     "104.17.0.1",
+                     "104.24.0.1"
                  ],
+    "auth_endpoints_strict":  true,
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.54/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.54/AnqilaTool.exe",
-                    "https://anqila-license.adrianchirs8.workers.dev/updates/AnqilaTool.exe"
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.55/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.55/AnqilaTool.exe",
+                    "https://anqila.xyz/updates/AnqilaTool.exe"
                 ]
 }
