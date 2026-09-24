@@ -2,15 +2,15 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.59",
+    "version":  "1.0.60",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-24T11:22:54.1073492Z",
-    "release_notes":  "安装包瘦身：不再随包带地图字节备份与未使用的运行库，下载与安装更快；功能、地图适配与保护强度不变。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.59/AnqilaTool.exe",
-    "size":  13489328,
-    "sha256":  "E0CA6B755A8EAECF1E80C69121E3C6EED3CBBDDA975CF729D05591F51E944946",
-    "core_sha256":  "78694FA21EBF3C6A65C0CB51E4928B87B213E0F7CC696CB5BB789C5844A40BAE",
+    "published_utc":  "2026-09-24T14:14:42.6752437Z",
+    "release_notes":  "修好「重铸石」等账本类物品在地图更新后写入被误判失败的问题；界面与操作方式不变。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.60/AnqilaTool.exe",
+    "size":  13489504,
+    "sha256":  "C92DF418DB76548E3DC66DFD7DD79A56A3BCDDE96E20740DCD7A940CD2B240B8",
+    "core_sha256":  "4DA3AFB64BEEF82B82418C4DB42D7F22705E9635F8786C73C9B6896AC715F508",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila.xyz",
@@ -19,7 +19,7 @@
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/585805966",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/586106784",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.27.0.1",
@@ -118,12 +118,17 @@
                                   "version":  "1.0.59",
                                   "published_utc":  "2026-09-24T19:10:00Z",
                                   "summary":  "安装包瘦身：不再随包带地图字节备份与未使用的运行库，下载与安装更快；功能、地图适配与保护强度不变。"
+                              },
+                              {
+                                  "version":  "1.0.60",
+                                  "published_utc":  "2026-09-24T21:40:00Z",
+                                  "summary":  "修好「重铸石」等账本类物品在地图更新后写入被误判失败的问题；界面与操作方式不变。"
                               }
                           ],
     "release_archive_note":  "历史版本简要已归档到发行页。",
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.59/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.59/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.60/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.60/AnqilaTool.exe",
                     "https://anqila.xyz/updates/AnqilaTool.exe"
                 ]
 }
