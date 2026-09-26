@@ -1,149 +1,154 @@
 {
-  "schema": 2,
-  "product": "anqila-y3-204521",
-  "channel": "stable",
-  "version": "1.0.65",
-  "update_protocol": 2,
-  "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-09-26T12:24:06.1661693Z",
-  "release_notes": "修好「封禁存档一键修复」执行时宝库汇总被误判丢写、导致整次操作回滚的问题；装备定制的词条框现在列出全部可指定词条，强化等级默认满级。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.65/AnqilaTool.exe",
-  "size": 13907440,
-  "sha256": "549EBCA83EBFE407532EFE755E317D28DF6615BF3EAC26311758053BEA22F927",
-  "core_sha256": "7576F3F0728279AC9A5A1B0AEF56D89D4E6B77A84156569BCA619E0DB60CDAD9",
-  "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
-  "auth_endpoints": [
-    "https://anqila.xyz",
-    "https://api.anqila.xyz",
-    "https://anqila-license.pages.dev",
-    "https://anqila-license.adrianchirs8.workers.dev",
-    "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
-  ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/590616316",
-  "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
-  "edge_ips": [
-    "104.27.0.1",
-    "104.16.160.1",
-    "2606:4700:3034::6815:2e2c",
-    "2606:4700:3033::ac43:892a",
-    "2606:4700:310c::ac42:2f8e",
-    "2606:4700:310c::ac42:2c72",
-    "2a06:98c1:3121::3",
-    "104.17.0.1",
-    "104.24.0.1"
-  ],
-  "auth_endpoints_strict": true,
-  "release_summaries": [
-    {
-      "version": "1.0.43",
-      "published_utc": "09/21/2026 16:52:58",
-      "summary": "修好「无论是否开加速都提示网络请求失败」的问题，登录与检查更新恢复可用。"
-    },
-    {
-      "version": "1.0.44",
-      "published_utc": "09/21/2026 21:28:48",
-      "summary": "修好点「读取并应用」直接报错的问题；授权只在真正写入前刷新，不重复计数。"
-    },
-    {
-      "version": "1.0.45",
-      "published_utc": "09/21/2026 22:59:18",
-      "summary": "修好登录与「读取并应用」间歇超时；连接检查改为同时进行，个别地址不通不再拖慢整次操作。"
-    },
-    {
-      "version": "1.0.46",
-      "published_utc": "09/22/2026 09:56:31",
-      "summary": "继续修好间歇超时与断连；回包在途中丢失时按同一份请求重发，不会多计数。"
-    },
-    {
-      "version": "1.0.47",
-      "published_utc": "09/22/2026 12:30:12",
-      "summary": "地图包改为只读：工具只校验、只留证，不再改写任何地图文件。"
-    },
-    {
-      "version": "1.0.48",
-      "published_utc": "09/22/2026 17:08:00",
-      "summary": "无论是否开加速都能用：连接更快，失败自动换路，更新下载支持多镜像。"
-    },
-    {
-      "version": "1.0.49",
-      "published_utc": "09/22/2026 19:42:27",
-      "summary": "修好部分网络下点「应用」连接失败的问题；操作记录补充补传与异常隔离。"
-    },
-    {
-      "version": "1.0.50",
-      "published_utc": "09/22/2026 20:53:01",
-      "summary": "继续提速：记住上次可用的连接，冷启动更快；操作记录兼容历史编号写法。"
-    },
-    {
-      "version": "1.0.51",
-      "published_utc": "09/22/2026 23:54:52",
-      "summary": "让编辑器与执行器使用同一份连接配置，并新增自检。"
-    },
-    {
-      "version": "1.0.52",
-      "published_utc": "09/23/2026 09:00:07",
-      "summary": "适配 2026-09-23 地图更新：商城新增双节道具，地图版本标识升到 9-23。"
-    },
-    {
-      "version": "1.0.53",
-      "published_utc": "09/23/2026 17:24:29",
-      "summary": "KK 操作记录支持按次存档快照，可回滚到任意一次操作之前。"
-    },
-    {
-      "version": "1.0.54",
-      "published_utc": "09/23/2026 21:49:56",
-      "summary": "新增「账号战力」显示（已在 1.0.55 撤除）。"
-    },
-    {
-      "version": "1.0.55",
-      "published_utc": "09/24/2026 01:42:14",
-      "summary": "撤掉上一版的「账号战力」显示，并改善连接稳定性。"
-    },
-    {
-      "version": "1.0.56",
-      "published_utc": "09/24/2026 02:45:18",
-      "summary": "修好没挂加速时点「读取并备份」或「应用」偶发失败的问题。"
-    },
-    {
-      "version": "1.0.57",
-      "published_utc": "09/24/2026 11:30:00",
-      "summary": "更新简要改为概括显示；历史版本简要归档到发行页。界面与操作步骤不变。"
-    },
-    {
-      "version": "1.0.58",
-      "published_utc": "09/24/2026 10:30:00",
-      "summary": "适配 2026-09-24 地图更新：新增中秋活动内容（月饼、中秋商店、相关掉落与装备）。地图包仍然只读，功能与操作步骤不变。"
-    },
-    {
-      "version": "1.0.59",
-      "published_utc": "09/24/2026 19:10:00",
-      "summary": "安装包瘦身：不再随包带地图字节备份与未使用的运行库，下载与安装更快；功能、地图适配与保护强度不变。"
-    },
-    {
-      "version": "1.0.60",
-      "published_utc": "09/24/2026 21:40:00",
-      "summary": "修好「重铸石」等账本类物品在地图更新后写入被误判失败的问题；界面与操作方式不变。"
-    },
-    {
-      "version": "1.0.63",
-      "published_utc": "09/25/2026 21:27:34",
-      "summary": "本版恢复稳定基线，并新增「封禁存档一键修复」与装备定制：被处理过的存档点一下即可恢复正常写入，装备可按套装 / 层次 / 部位逐件定制强化等级与词条。界面同步换新，功能与操作步骤不变。"
-    },
-    {
-      "version": "1.0.64",
-      "published_utc": "09/26/2026 07:50:18",
-      "summary": "修好「封禁存档一键修复」授权被拒的问题；装备定制词条不再限制部位，全部装备均可指定任意词条；工具图标换成自有标志。"
-    },
-    {
-      "version": "1.0.65",
-      "published_utc": "09/26/2026 11:47:02",
-      "summary": "修好「封禁存档一键修复」执行时宝库汇总被误判丢写、导致整次操作回滚的问题；装备定制的词条框现在列出全部可指定词条，强化等级默认满级。"
-    }
-  ],
-  "release_archive_note": "历史版本简要已归档到发行页。",
-  "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.65/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.65/AnqilaTool.exe",
-    "https://anqila.xyz/updates/AnqilaTool.exe"
-  ]
+    "schema":  2,
+    "product":  "anqila-y3-204521",
+    "channel":  "stable",
+    "version":  "1.0.66",
+    "update_protocol":  2,
+    "legacy_upgrade_version":  "2.0.0.0",
+    "published_utc":  "2026-09-26T18:15:31.3197290Z",
+    "release_notes":  "修好「封禁存档一键修复」对宝库类数据不生效的问题：点过修复的账号，宝库与装备、奇珍都能正常刷入，且与正常账号完全隔离；装备定制的词条可任意指定并写明所属部位表，强化等级默认满级。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.66/AnqilaTool.exe",
+    "size":  13581744,
+    "sha256":  "B42769710BAD086CCEC7F7D8B59063347928234F79B8985223D7F8119E63275D",
+    "core_sha256":  "2CBF7DA9CB4691D55564BA8A6AEBA19F3283DC1B4AC0F3454A38F6E135629A0D",
+    "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
+    "auth_endpoints":  [
+                           "https://anqila.xyz",
+                           "https://api.anqila.xyz",
+                           "https://anqila-license.pages.dev",
+                           "https://anqila-license.adrianchirs8.workers.dev",
+                           "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
+                       ],
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/591183923",
+    "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
+    "edge_ips":  [
+                     "104.27.0.1",
+                     "104.16.160.1",
+                     "2606:4700:3034::6815:2e2c",
+                     "2606:4700:3033::ac43:892a",
+                     "2606:4700:310c::ac42:2f8e",
+                     "2606:4700:310c::ac42:2c72",
+                     "2a06:98c1:3121::3",
+                     "104.17.0.1",
+                     "104.24.0.1"
+                 ],
+    "auth_endpoints_strict":  true,
+    "release_summaries":  [
+                              {
+                                  "version":  "1.0.43",
+                                  "published_utc":  "2026-09-21T16:52:58.8304426Z",
+                                  "summary":  "修好「无论是否开加速都提示网络请求失败」的问题，登录与检查更新恢复可用。"
+                              },
+                              {
+                                  "version":  "1.0.44",
+                                  "published_utc":  "2026-09-21T21:28:48.2956658Z",
+                                  "summary":  "修好点「读取并应用」直接报错的问题；授权只在真正写入前刷新，不重复计数。"
+                              },
+                              {
+                                  "version":  "1.0.45",
+                                  "published_utc":  "2026-09-21T22:59:18.9182558Z",
+                                  "summary":  "修好登录与「读取并应用」间歇超时；连接检查改为同时进行，个别地址不通不再拖慢整次操作。"
+                              },
+                              {
+                                  "version":  "1.0.46",
+                                  "published_utc":  "2026-09-22T09:56:31.7700936Z",
+                                  "summary":  "继续修好间歇超时与断连；回包在途中丢失时按同一份请求重发，不会多计数。"
+                              },
+                              {
+                                  "version":  "1.0.47",
+                                  "published_utc":  "2026-09-22T12:30:12.1360792Z",
+                                  "summary":  "地图包改为只读：工具只校验、只留证，不再改写任何地图文件。"
+                              },
+                              {
+                                  "version":  "1.0.48",
+                                  "published_utc":  "2026-09-22T17:08:00.0134815Z",
+                                  "summary":  "无论是否开加速都能用：连接更快，失败自动换路，更新下载支持多镜像。"
+                              },
+                              {
+                                  "version":  "1.0.49",
+                                  "published_utc":  "2026-09-22T19:42:27.0505739Z",
+                                  "summary":  "修好部分网络下点「应用」连接失败的问题；操作记录补充补传与异常隔离。"
+                              },
+                              {
+                                  "version":  "1.0.50",
+                                  "published_utc":  "2026-09-22T20:53:01.0950214Z",
+                                  "summary":  "继续提速：记住上次可用的连接，冷启动更快；操作记录兼容历史编号写法。"
+                              },
+                              {
+                                  "version":  "1.0.51",
+                                  "published_utc":  "2026-09-22T23:54:52.9678588Z",
+                                  "summary":  "让编辑器与执行器使用同一份连接配置，并新增自检。"
+                              },
+                              {
+                                  "version":  "1.0.52",
+                                  "published_utc":  "2026-09-23T09:00:07.4612941Z",
+                                  "summary":  "适配 2026-09-23 地图更新：商城新增双节道具，地图版本标识升到 9-23。"
+                              },
+                              {
+                                  "version":  "1.0.53",
+                                  "published_utc":  "2026-09-23T17:24:29.4318489Z",
+                                  "summary":  "KK 操作记录支持按次存档快照，可回滚到任意一次操作之前。"
+                              },
+                              {
+                                  "version":  "1.0.54",
+                                  "published_utc":  "2026-09-23T21:49:56.141864Z",
+                                  "summary":  "新增「账号战力」显示（已在 1.0.55 撤除）。"
+                              },
+                              {
+                                  "version":  "1.0.55",
+                                  "published_utc":  "2026-09-24T01:42:14.6099298Z",
+                                  "summary":  "撤掉上一版的「账号战力」显示，并改善连接稳定性。"
+                              },
+                              {
+                                  "version":  "1.0.56",
+                                  "published_utc":  "2026-09-24T02:45:18.1286316Z",
+                                  "summary":  "修好没挂加速时点「读取并备份」或「应用」偶发失败的问题。"
+                              },
+                              {
+                                  "version":  "1.0.57",
+                                  "published_utc":  "2026-09-24T11:30:00Z",
+                                  "summary":  "更新简要改为概括显示；历史版本简要归档到发行页。界面与操作步骤不变。"
+                              },
+                              {
+                                  "version":  "1.0.58",
+                                  "published_utc":  "2026-09-24T10:30:00Z",
+                                  "summary":  "适配 2026-09-24 地图更新：新增中秋活动内容（月饼、中秋商店、相关掉落与装备）。地图包仍然只读，功能与操作步骤不变。"
+                              },
+                              {
+                                  "version":  "1.0.59",
+                                  "published_utc":  "2026-09-24T19:10:00Z",
+                                  "summary":  "安装包瘦身：不再随包带地图字节备份与未使用的运行库，下载与安装更快；功能、地图适配与保护强度不变。"
+                              },
+                              {
+                                  "version":  "1.0.60",
+                                  "published_utc":  "2026-09-24T21:40:00Z",
+                                  "summary":  "修好「重铸石」等账本类物品在地图更新后写入被误判失败的问题；界面与操作方式不变。"
+                              },
+                              {
+                                  "version":  "1.0.63",
+                                  "published_utc":  "2026-09-25T21:27:34Z",
+                                  "summary":  "本版恢复稳定基线，并新增「封禁存档一键修复」与装备定制：被处理过的存档点一下即可恢复正常写入，装备可按套装 / 层次 / 部位逐件定制强化等级与词条。界面同步换新，功能与操作步骤不变。"
+                              },
+                              {
+                                  "version":  "1.0.64",
+                                  "published_utc":  "2026-09-26T07:50:18Z",
+                                  "summary":  "修好「封禁存档一键修复」授权被拒的问题；装备定制词条不再限制部位，全部装备均可指定任意词条；工具图标换成自有标志。"
+                              },
+                              {
+                                  "version":  "1.0.65",
+                                  "published_utc":  "2026-09-26T11:47:02Z",
+                                  "summary":  "修好「封禁存档一键修复」把刚写入的宝库数量误判成丢写、导致整次操作回滚的问题；装备定制词条框列出全部可指定词条，强化等级默认满级。"
+                              },
+                              {
+                                  "version":  "1.0.66",
+                                  "published_utc":  "2026-09-26T18:00:16Z",
+                                  "summary":  "修好「封禁存档一键修复」对宝库类数据不生效的问题：点过修复的账号，宝库与装备、奇珍都能正常刷入，且与正常账号完全隔离；装备定制的词条可任意指定并写明所属部位表，强化等级默认满级。"
+                              }
+                          ],
+    "release_archive_note":  "历史版本简要已归档到发行页。",
+    "mirrors":  [
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.66/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.66/AnqilaTool.exe",
+                    "https://anqila.xyz/updates/AnqilaTool.exe"
+                ]
 }
