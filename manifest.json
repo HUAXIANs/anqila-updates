@@ -2,15 +2,15 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.66",
+    "version":  "1.0.67",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-26T18:15:31.3197290Z",
-    "release_notes":  "修好「封禁存档一键修复」对宝库类数据不生效的问题：点过修复的账号，宝库与装备、奇珍都能正常刷入，且与正常账号完全隔离；装备定制的词条可任意指定并写明所属部位表，强化等级默认满级。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.66/AnqilaTool.exe",
-    "size":  13581744,
-    "sha256":  "B42769710BAD086CCEC7F7D8B59063347928234F79B8985223D7F8119E63275D",
-    "core_sha256":  "2CBF7DA9CB4691D55564BA8A6AEBA19F3283DC1B4AC0F3454A38F6E135629A0D",
+    "published_utc":  "2026-09-26T22:20:27.4824442Z",
+    "release_notes":  "本版把工具界面整体换成新的外观：每个页面、多量修改与逐件定制、更新窗口全部重做，操作方式与原来一致。同时修好装备定制词条不能任意指定、封禁存档一键修复对宝库类数据不生效的问题。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.67/AnqilaTool.exe",
+    "size":  13691568,
+    "sha256":  "AF88B0AF4BC432CD9BFCF78EDB22E06AB9C8F6CD61B9D47794B9DC0E7429549E",
+    "core_sha256":  "45D057DED3C5666B9D835E6A50F1A7E6AEE4EB99D54226BA07E1DCB652845D4B",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila.xyz",
@@ -19,7 +19,7 @@
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/591183923",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/591572040",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.27.0.1",
@@ -143,12 +143,17 @@
                                   "version":  "1.0.66",
                                   "published_utc":  "2026-09-26T18:00:16Z",
                                   "summary":  "修好「封禁存档一键修复」对宝库类数据不生效的问题：点过修复的账号，宝库与装备、奇珍都能正常刷入，且与正常账号完全隔离；装备定制的词条可任意指定并写明所属部位表，强化等级默认满级。"
+                              },
+                              {
+                                  "version":  "1.0.67",
+                                  "published_utc":  "2026-09-26T21:51:43Z",
+                                  "summary":  "本版把工具界面整体换成新的外观：每个页面、多量修改与逐件定制、更新窗口全部重做，操作方式与原来一致。同时修好装备定制词条不能任意指定、封禁存档一键修复对宝库类数据不生效的问题。"
                               }
                           ],
     "release_archive_note":  "历史版本简要已归档到发行页。",
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.66/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.66/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.67/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.67/AnqilaTool.exe",
                     "https://anqila.xyz/updates/AnqilaTool.exe"
                 ]
 }
