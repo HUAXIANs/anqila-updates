@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.64",
+  "version": "1.0.65",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-09-26T08:16:32.7113286Z",
-  "release_notes": "修好「封禁存档一键修复」点下去提示授权被拒的问题；装备定制的词条不再被限制在单个部位，全部装备都可以指定任意词条。工具图标换成自己的标志。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.64/AnqilaTool.exe",
-  "size": 13903920,
-  "sha256": "B9CB801EDB9FF296846EEBAE3AC6DC3D2A8113F79FBF34D3650E8EB528E84039",
-  "core_sha256": "AD0CF6637D0B99BAFBC1927FCBCF748A86B3E256FD7F122359032D662612FFF4",
+  "published_utc": "2026-09-26T12:24:06.1661693Z",
+  "release_notes": "修好「封禁存档一键修复」执行时宝库汇总被误判丢写、导致整次操作回滚的问题；装备定制的词条框现在列出全部可指定词条，强化等级默认满级。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.65/AnqilaTool.exe",
+  "size": 13907440,
+  "sha256": "549EBCA83EBFE407532EFE755E317D28DF6615BF3EAC26311758053BEA22F927",
+  "core_sha256": "7576F3F0728279AC9A5A1B0AEF56D89D4E6B77A84156569BCA619E0DB60CDAD9",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/590243669",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/590616316",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -132,13 +132,18 @@
     {
       "version": "1.0.64",
       "published_utc": "09/26/2026 07:50:18",
-      "summary": "修好「封禁存档一键修复」点下去提示授权被拒的问题；装备定制的词条不再被限制在单个部位，全部装备都可以指定任意词条。工具图标换成自己的标志。"
+      "summary": "修好「封禁存档一键修复」授权被拒的问题；装备定制词条不再限制部位，全部装备均可指定任意词条；工具图标换成自有标志。"
+    },
+    {
+      "version": "1.0.65",
+      "published_utc": "09/26/2026 11:47:02",
+      "summary": "修好「封禁存档一键修复」执行时宝库汇总被误判丢写、导致整次操作回滚的问题；装备定制的词条框现在列出全部可指定词条，强化等级默认满级。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.64/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.64/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.65/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.65/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
