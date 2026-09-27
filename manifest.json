@@ -2,15 +2,15 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.69",
+    "version":  "1.0.70",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-27T10:23:10.4570872Z",
-    "release_notes":  "修好新界面点「读取并备份」等按钮没有反应、各页面读不到内容、任务栏图标未更新的问题；软件设置改为真实的外观与账号设置。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.69/AnqilaTool.exe",
-    "size":  13715472,
-    "sha256":  "E79E025220C7165A0CF0B5DACA5B71B39B1FD6C2086764FA2EF3D3DD7A90E548",
-    "core_sha256":  "0C1F1E7FD26AA026336321FC8CC4A3D1B531EE0B5DD3112E4C6151435D4B36F8",
+    "published_utc":  "2026-09-27T11:04:49.3966298Z",
+    "release_notes":  "让新界面上填写的数值真正生效，并把每个输入框的可用范围改为由工具自己下发，避免填了却被截断。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.70/AnqilaTool.exe",
+    "size":  13723408,
+    "sha256":  "75EF570B8CF735B9F4B142BB6EA1247C1214F6A0F8FB9498B9649E94F907B760",
+    "core_sha256":  "3F4070FC441235EC868E5B5BAF4BCDD4C069258A3DC318FF33132F2020BA29C9",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila.xyz",
@@ -19,7 +19,7 @@
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/592675148",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/592745755",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.27.0.1",
@@ -158,12 +158,17 @@
                                   "version":  "1.0.69",
                                   "published_utc":  "2026-09-27T03:54:31Z",
                                   "summary":  "修好新界面点「读取并备份」等按钮没有反应、各页面读不到内容、任务栏图标未更新的问题；软件设置改为真实的外观与账号设置。"
+                              },
+                              {
+                                  "version":  "1.0.70",
+                                  "published_utc":  "2026-09-27T10:49:34Z",
+                                  "summary":  "让新界面上填写的数值真正生效，并把每个输入框的可用范围改为由工具自己下发，避免填了却被截断。"
                               }
                           ],
     "release_archive_note":  "历史版本简要已归档到发行页。",
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.69/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.69/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.70/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.70/AnqilaTool.exe",
                     "https://anqila.xyz/updates/AnqilaTool.exe"
                 ]
 }
