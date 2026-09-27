@@ -2,15 +2,15 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.68",
+    "version":  "1.0.69",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-09-27T02:24:49.3092520Z",
-    "release_notes":  "修好新界面下物品、目录明细、操作历史、运行日志、更新说明等页面空白的问题，并补齐多量修改里遗漏的考古等项；品牌标志与工具图标恢复显示。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.68/AnqilaTool.exe",
-    "size":  13699616,
-    "sha256":  "E8EA96D016802AA0921D95184A7709E95305C2796D411ACE2F099B1FDCBE5B2C",
-    "core_sha256":  "7830C6C9B716F9AFAAA987B8575DE8F00F524B314EF6D333234C2985C6C5A62F",
+    "published_utc":  "2026-09-27T10:23:10.4570872Z",
+    "release_notes":  "修好新界面点「读取并备份」等按钮没有反应、各页面读不到内容、任务栏图标未更新的问题；软件设置改为真实的外观与账号设置。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.69/AnqilaTool.exe",
+    "size":  13715472,
+    "sha256":  "E79E025220C7165A0CF0B5DACA5B71B39B1FD6C2086764FA2EF3D3DD7A90E548",
+    "core_sha256":  "0C1F1E7FD26AA026336321FC8CC4A3D1B531EE0B5DD3112E4C6151435D4B36F8",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila.xyz",
@@ -19,7 +19,7 @@
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/591948594",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/592675148",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.27.0.1",
@@ -153,12 +153,17 @@
                                   "version":  "1.0.68",
                                   "published_utc":  "2026-09-27T02:11:38Z",
                                   "summary":  "修好新界面下物品、目录明细、操作历史、运行日志、更新说明等页面空白的问题，并补齐多量修改里遗漏的考古等项；品牌标志与工具图标恢复显示。"
+                              },
+                              {
+                                  "version":  "1.0.69",
+                                  "published_utc":  "2026-09-27T03:54:31Z",
+                                  "summary":  "修好新界面点「读取并备份」等按钮没有反应、各页面读不到内容、任务栏图标未更新的问题；软件设置改为真实的外观与账号设置。"
                               }
                           ],
     "release_archive_note":  "历史版本简要已归档到发行页。",
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.68/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.68/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.69/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.69/AnqilaTool.exe",
                     "https://anqila.xyz/updates/AnqilaTool.exe"
                 ]
 }
