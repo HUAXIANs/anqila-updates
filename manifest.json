@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.72",
+  "version": "1.0.73",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-09-29T19:53:34.8235413Z",
-  "release_notes": "完整落地三套设计的页面交互、登录与操作状态；声望祝福位置改为地图目录驱动，支持当前 56 项并可随地图更新自动适配。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.72/AnqilaTool.exe",
-  "size": 15111504,
-  "sha256": "181F62AD89BD8167423CC2B884EDEAA070AA2CD9448553C285E9E51E3A9A1D6E",
-  "core_sha256": "70A57A1327084FB34624ABD46799597F817CBA3707822E47D1B752D2370CE47F",
+  "published_utc": "2026-09-30T10:04:05.9960179Z",
+  "release_notes": "适配 2026-09-30 地图更新：地图版本标识升到 9-30，商城奖励、声望商店与技能效果等内容随地图同步；地图包仍然只读，功能与操作步骤不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.73/AnqilaTool.exe",
+  "size": 15137408,
+  "sha256": "23465ED1B702A4FC91764B73669A93D8E3EAD67C8957B92BE2D43B93BAF8FE6C",
+  "core_sha256": "B74535EDB853DE3BAB265FD3E3A9C83CECE45BC256880A30A3322BBB851FAAC3",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/599079733",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/600596290",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -173,12 +173,17 @@
       "version": "1.0.72",
       "published_utc": "09/29/2026 16:40:19",
       "summary": "完整落地三套设计的页面交互、登录与操作状态；声望祝福位置改为地图目录驱动，支持当前 56 项并可随地图更新自动适配。"
+    },
+    {
+      "version": "1.0.73",
+      "published_utc": "09/30/2026 09:42:55",
+      "summary": "适配 2026-09-30 地图更新：地图版本标识升到 9-30，商城奖励、声望商店与技能效果等内容随地图同步；地图包仍然只读，功能与操作步骤不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.72/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.72/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.73/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.73/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
