@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.73",
+  "version": "1.0.74",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-09-30T10:04:05.9960179Z",
-  "release_notes": "适配 2026-09-30 地图更新：地图版本标识升到 9-30，商城奖励、声望商店与技能效果等内容随地图同步；地图包仍然只读，功能与操作步骤不变。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.73/AnqilaTool.exe",
-  "size": 15137408,
-  "sha256": "23465ED1B702A4FC91764B73669A93D8E3EAD67C8957B92BE2D43B93BAF8FE6C",
-  "core_sha256": "B74535EDB853DE3BAB265FD3E3A9C83CECE45BC256880A30A3322BBB851FAAC3",
+  "published_utc": "2026-10-01T09:46:53.0725954Z",
+  "release_notes": "适配 2026-10-01 地图更新：地图版本标识升到 10-1，商城与物品等内容随地图同步，新增「超级声望自选箱」；地图包仍然只读，功能与操作步骤不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.74/AnqilaTool.exe",
+  "size": 15173856,
+  "sha256": "DDB024A39EDE527FFCC8A866F975D53570B3706C022FCF8EB5D97CC09730C814",
+  "core_sha256": "89ECE7C37736C8410414EB1DCCC67EF87B861AFD803417F9A5251C85B0D9F7E1",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/600596290",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/602875114",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -178,12 +178,17 @@
       "version": "1.0.73",
       "published_utc": "09/30/2026 09:42:55",
       "summary": "适配 2026-09-30 地图更新：地图版本标识升到 9-30，商城奖励、声望商店与技能效果等内容随地图同步；地图包仍然只读，功能与操作步骤不变。"
+    },
+    {
+      "version": "1.0.74",
+      "published_utc": "10/01/2026 09:07:05",
+      "summary": "适配 2026-10-01 地图更新：地图版本标识升到 10-1，商城与物品等内容随地图同步，新增「超级声望自选箱」；地图包仍然只读，功能与操作步骤不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.73/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.73/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.74/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.74/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
