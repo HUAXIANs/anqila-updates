@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.75",
+  "version": "1.0.76",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-01T16:10:24.3617493Z",
-  "release_notes": "本次更新重做了启动与更新界面、修正了中文显示，并完善了操作历史：现在可以直接选中某一次操作回滚。使用方式不变。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.75/AnqilaTool.exe",
-  "size": 15184960,
-  "sha256": "726DC598B1FB98A8E87C2D3D4B842DC6B52CCFC63E4F0B12765D942838A3F4A7",
-  "core_sha256": "C0C1DA347F535754AD9D3EB93737CB38E1E67F408008FC8260BC6BF0F2F40B9C",
+  "published_utc": "2026-10-01T17:46:22.4668528Z",
+  "release_notes": "修好「应用成功但界面一直停在进度上」：现在成功后直接显示成功，失败直接给出原因，进度窗口也可以收起。个人中心会显示当前游戏账号与 KK 账号名额使用情况。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.76/AnqilaTool.exe",
+  "size": 15195136,
+  "sha256": "6BC3DED1F2CDF4C27B30E46346DE9A350277AC3C0320A9C5586D02679B25A95D",
+  "core_sha256": "16992C7060334697B49A25580D9F443879166F85EF5A7281F9E60A6ED85F0A36",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/603626636",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/603796618",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -187,13 +187,18 @@
     {
       "version": "1.0.75",
       "published_utc": "10/01/2026 16:00:00",
-      "summary": "本次更新重做了启动与更新界面、修正了中文显示，并完善了操作历史：现在可以直接选中某一次操作回滚。使用方式不变。"
+      "summary": "重做启动与更新界面、修正中文显示、多量修改改为点圆点启用、操作历史可直接回滚选中的那一次；地图包仍然只读，使用方式不变。"
+    },
+    {
+      "version": "1.0.76",
+      "published_utc": "10/01/2026 18:00:00",
+      "summary": "修好「应用成功但界面一直停在进度上」：现在成功后直接显示成功，失败直接给出原因，进度窗口也可以收起。个人中心会显示当前游戏账号与 KK 账号名额使用情况。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.75/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.75/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.76/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.76/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
