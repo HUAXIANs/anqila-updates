@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.78",
+  "version": "1.0.79",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-03T05:22:31.8962069Z",
-  "release_notes": "全分辨率自适应：1366 到 4K 都能正确排版，小窗口下表格改为横向滑动而不是裁掉右列；导航九个页面各有独立图标，品牌图标换回等比清晰版本。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.78/AnqilaTool.exe",
-  "size": 15866416,
-  "sha256": "E860EA837A520D4C0B65EA2DE45A5168611CC9B9F76CDD845904AB7455F91A39",
-  "core_sha256": "75D2A14DA2D9C7B82548C7B1C6F873399535ECABAAB78EFE3F4AFE4CB96CAF9F",
+  "published_utc": "2026-10-03T15:21:54.8189909Z",
+  "release_notes": "启动准备与检查更新窗口换成本体同一套界面；品牌标统一来源，单文件版不再空白；操作历史点选恢复正常。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.79/AnqilaTool.exe",
+  "size": 15868944,
+  "sha256": "5C9B3AAAC6CFB1E874BCDEF6DC6E425D2471F985D248034F847EA628BBBF355D",
+  "core_sha256": "E814CA925B1A4175102966047DE5868EFAE7A0C816536E5289090F9A777E566C",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/607202515",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/608029497",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -203,12 +203,17 @@
       "version": "1.0.78",
       "published_utc": "10/03/2026 01:50:00",
       "summary": "全分辨率自适应：1366 到 4K 都能正确排版，小窗口下表格改为横向滑动而不是裁掉右列；导航九个页面各有独立图标，品牌图标换回等比清晰版本。"
+    },
+    {
+      "version": "1.0.79",
+      "published_utc": "10/03/2026 06:40:00",
+      "summary": "启动准备与检查更新窗口换成本体同一套界面；品牌标统一来源，单文件版不再空白；操作历史点选恢复正常。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.78/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.78/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.79/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.79/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
