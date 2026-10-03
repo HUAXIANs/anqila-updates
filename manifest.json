@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.77",
+  "version": "1.0.78",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-03T02:18:35.8176876Z",
-  "release_notes": "修复装备定制与数量设置互相影响的问题：仅修改强化或词条时保留已有装备，数量与定制一起设置时按明确目标执行；背包空间不足会提前提示。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.77/AnqilaTool.exe",
-  "size": 15530768,
-  "sha256": "D8DC7A16E4C067A43B1963E0F8EC608B8F15387B47600B59596B165197EA0233",
-  "core_sha256": "8601C446D396B1B9BCAD93F5DF0605AC458CD763840DAAA91C59E3BEB98463DC",
+  "published_utc": "2026-10-03T05:22:31.8962069Z",
+  "release_notes": "全分辨率自适应：1366 到 4K 都能正确排版，小窗口下表格改为横向滑动而不是裁掉右列；导航九个页面各有独立图标，品牌图标换回等比清晰版本。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.78/AnqilaTool.exe",
+  "size": 15866416,
+  "sha256": "E860EA837A520D4C0B65EA2DE45A5168611CC9B9F76CDD845904AB7455F91A39",
+  "core_sha256": "75D2A14DA2D9C7B82548C7B1C6F873399535ECABAAB78EFE3F4AFE4CB96CAF9F",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/606966992",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/607202515",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -207,8 +207,8 @@
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.77/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.77/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.78/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.78/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
