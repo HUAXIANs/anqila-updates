@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.82",
+  "version": "1.0.83",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-11T07:53:15.1623480Z",
-  "release_notes": "适配 2026-10-11 游戏地图更新：新增套装、首领与自选箱内容按新地图同步，新增内容可正常读取与定制。新增局内增强与单位属性调整（进图选定英雄后生效），并提供局内快捷面板。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.82/AnqilaTool.exe",
-  "size": 15958384,
-  "sha256": "4A8E1F7CFCBB433351A9B7FB10ECFF96B2FBA7D27E78CD27375D68CB2E296027",
-  "core_sha256": "B526050F4F33D19A145D65099E2F91FD7AE84425CBCDA100027D3B4B6A672DDE",
+  "published_utc": "2026-10-11T08:56:49.1903482Z",
+  "release_notes": "修复「单位属性」与「GM 模式」点击报错、页面文字重叠与按钮无响应的问题；新增进图后自动补装本局免踢名单，并把「一键通关」入口做到位。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.83/AnqilaTool.exe",
+  "size": 15962368,
+  "sha256": "ECC5A64022A7616804A0C26F69B83AFCF6369FA55E9CEC94A2ADBF69685B7A24",
+  "core_sha256": "37528519BA2E391447B81225617C8DC9A8D5F43F1DAF95E84AD0D51D5190F59A",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/630143675",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/630270838",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -223,12 +223,17 @@
       "version": "1.0.82",
       "published_utc": "10/11/2026 07:33:37",
       "summary": "适配 2026-10-11 游戏地图更新：新增套装、首领与自选箱内容按新地图同步，新增内容可正常读取与定制。新增局内增强与单位属性调整（进图选定英雄后生效），并提供局内快捷面板。"
+    },
+    {
+      "version": "1.0.83",
+      "published_utc": "10/11/2026 08:36:21",
+      "summary": "修复「单位属性」与「GM 模式」点击报错、页面文字重叠与按钮无响应的问题；新增进图后自动补装本局免踢名单，并把「一键通关」入口做到位。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.82/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.82/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.83/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.83/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
