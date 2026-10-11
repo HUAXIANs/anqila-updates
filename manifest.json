@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.81",
+  "version": "1.0.82",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-08T14:46:34.5650494Z",
-  "release_notes": "适配 2026-10-08 游戏地图更新：新装备、新套装与新首领内容按新地图同步，新增装备可正常读取与定制；修复「应用修改」偶发卡住，自动更新下载更快更稳；遇到不认识的地图版本会停止写入并提示。局内退出保护保持默认开启。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.81/AnqilaTool.exe",
-  "size": 15878224,
-  "sha256": "F057E0210DE9A69359BA2E2F858EB592582048F70132AFD99D004434F602120F",
-  "core_sha256": "E7C807A1FED01D7AA5B06FAB772B86E49A17A08B7F4A94D47B581EA0138CF5A6",
+  "published_utc": "2026-10-11T07:53:15.1623480Z",
+  "release_notes": "适配 2026-10-11 游戏地图更新：新增套装、首领与自选箱内容按新地图同步，新增内容可正常读取与定制。新增局内增强与单位属性调整（进图选定英雄后生效），并提供局内快捷面板。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.82/AnqilaTool.exe",
+  "size": 15958384,
+  "sha256": "4A8E1F7CFCBB433351A9B7FB10ECFF96B2FBA7D27E78CD27375D68CB2E296027",
+  "core_sha256": "B526050F4F33D19A145D65099E2F91FD7AE84425CBCDA100027D3B4B6A672DDE",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/622108424",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/630143675",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -217,13 +217,18 @@
     {
       "version": "1.0.81",
       "published_utc": "10/06/2026 14:57:51",
-      "summary": "适配 2026-10-08 游戏地图更新：新装备、新套装与新首领内容按新地图同步，新增装备可正常读取与定制；修复「应用修改」偶发卡住，自动更新下载更快更稳；遇到不认识的地图版本会停止写入并提示。局内退出保护保持默认开启。"
+      "summary": "修复「应用修改」偶发卡住与自动更新下载过慢；提升不同游戏版本兼容性，遇到不认识的版本会停止写入并提示；局内退出保护保持默认开启。"
+    },
+    {
+      "version": "1.0.82",
+      "published_utc": "10/11/2026 07:33:37",
+      "summary": "适配 2026-10-11 游戏地图更新：新增套装、首领与自选箱内容按新地图同步，新增内容可正常读取与定制。新增局内增强与单位属性调整（进图选定英雄后生效），并提供局内快捷面板。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.81/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.81/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.82/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.82/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
