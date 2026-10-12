@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.88",
+  "version": "1.0.89",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-12T10:26:26.3425902Z",
-  "release_notes": "修好「进游戏后又提示重开」：先前只在游戏退出时才归位，超过等待窗口就没人管了。现在游戏一进去就自动完成后续步骤，不需要关游戏或重开工具；没启动游戏也不会還留半途。单位属性与 GM 模式保持即点即用。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.88/AnqilaTool.exe",
-  "size": 15977776,
-  "sha256": "2092BFB62569A73CC264F7D7918B69717C4FC53C597439B7EFCDED56517EB50F",
-  "core_sha256": "C62F2B62F70876A6009EF39FF90CC9F470467958E88CD027FDA041948308A825",
+  "published_utc": "2026-10-12T12:23:35.0729685Z",
+  "release_notes": "修好「单位属性」与「GM 模式」点任何按钮都弹“值不能为 null”的问题，并让界面上填的属性、资源、GM 开关等数值真正随点击生效；同时修好部分电脑上按钮跳回原样的问题。保持即点即用。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.89/AnqilaTool.exe",
+  "size": 15978048,
+  "sha256": "6FBF63BD7843567B2A8066392529AECB185A0CCC2AE4F0A7D8FABC6A8A4D14C7",
+  "core_sha256": "C8C0E294CDAFFDD036428E9D890642D63B522881533F0808630AF92EAED5C1B9",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/633441837",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/633716611",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -253,12 +253,17 @@
       "version": "1.0.88",
       "published_utc": "10/12/2026 10:10:00",
       "summary": "修好「进游戏后又提示重开」：先前只在游戏退出时才归位，超过等待窗口就没人管了。现在游戏一进去就自动完成后续步骤，不需要关游戏或重开工具；没启动游戏也不会還留半途。单位属性与 GM 模式保持即点即用。"
+    },
+    {
+      "version": "1.0.89",
+      "published_utc": "10/12/2026 12:10:00",
+      "summary": "修好「单位属性」与「GM 模式」点任何按钮都弹“值不能为 null”的问题，并让界面上填的属性、资源、GM 开关等数值真正随点击生效；同时修好部分电脑上按钮跳回原样的问题。保持即点即用。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.88/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.88/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.89/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.89/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
