@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.90",
+  "version": "1.0.91",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-12T15:32:32.1962459Z",
-  "release_notes": "修好点“读取并备份”时提示“引擎映像未找到”的问题；不再自动准备连接，只有你自己点一下才会开启。不论先开游戏还是先开工具都能直接用。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.90/AnqilaTool.exe",
-  "size": 15980592,
-  "sha256": "BDF60EEB9E2225B1219509BD8B15E34CFFCACF65D2C599826E8331F0F69089CF",
-  "core_sha256": "D9D0260B093243EB99F899FFBC99993FC49620711A87C01B7F1A8AE9ED94967D",
+  "published_utc": "2026-10-12T17:15:39.6233284Z",
+  "release_notes": "修好「单位属性」「GM 模式」点击后提示需要连接、用不了的问题；「零注入通道」改成完全手动：不点就不动，进游戏前点一次即可，进图后提示「已就绪」，游戏里也能直接接上。出错不再把登录状态清掉、不用反复重登。检查更新与下载也更快。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.91/AnqilaTool.exe",
+  "size": 15985632,
+  "sha256": "C8084BF925E46E1E2498469BC6D741908B6A6DE294A5D82E88D9C8A938BACEDF",
+  "core_sha256": "16CA2E5F4C758D33253CF853AA1FA06CDFCAB56C621635B5E188ED504B31701F",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/634184201",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/634437136",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -31,6 +31,18 @@
     "2a06:98c1:3121::3",
     "104.17.0.1",
     "104.24.0.1"
+  ],
+  "mirrors": [
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.91/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.91/AnqilaTool.exe",
+    "https://anqila.xyz/updates/AnqilaTool.exe"
+  ],
+  "manifest_mirrors": [
+    "https://anqila.xyz/updates/manifest.json",
+    "https://ghfile.geekertao.top/https://raw.githubusercontent.com/HUAXIANs/anqila-updates/main/manifest.json",
+    "https://gh.geekertao.top/https://raw.githubusercontent.com/HUAXIANs/anqila-updates/main/manifest.json",
+    "https://api.anqila.xyz/updates/manifest.json",
+    "https://gh-proxy.org/https://raw.githubusercontent.com/HUAXIANs/anqila-updates/main/manifest.json"
   ],
   "auth_endpoints_strict": true,
   "release_summaries": [
@@ -263,12 +275,12 @@
       "version": "1.0.90",
       "published_utc": "10/12/2026 15:20:00",
       "summary": "修好点“读取并备份”时提示“引擎映像未找到”的问题；不再自动准备连接，只有你自己点一下才会开启。不论先开游戏还是先开工具都能直接用。"
+    },
+    {
+      "version": "1.0.91",
+      "published_utc": "10/13/2026 02:00:00",
+      "summary": "修好「单位属性」「GM 模式」点击后提示需要连接、用不了的问题；「零注入通道」改成完全手动：不点就不动，进游戏前点一次即可，进图后提示「已就绪」，游戏里也能直接接上。出错不再把登录状态清掉、不用反复重登。检查更新与下载也更快。"
     }
   ],
-  "release_archive_note": "历史版本简要已归档到发行页。",
-  "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.90/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.90/AnqilaTool.exe",
-    "https://anqila.xyz/updates/AnqilaTool.exe"
-  ]
+  "release_archive_note": "历史版本简要已归档到发行页。"
 }
