@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.83",
+  "version": "1.0.84",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-11T08:56:49.1903482Z",
-  "release_notes": "修复「单位属性」与「GM 模式」点击报错、页面文字重叠与按钮无响应的问题；新增进图后自动补装本局免踢名单，并把「一键通关」入口做到位。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.83/AnqilaTool.exe",
-  "size": 15962368,
-  "sha256": "ECC5A64022A7616804A0C26F69B83AFCF6369FA55E9CEC94A2ADBF69685B7A24",
-  "core_sha256": "37528519BA2E391447B81225617C8DC9A8D5F43F1DAF95E84AD0D51D5190F59A",
+  "published_utc": "2026-10-12T06:48:37.8269409Z",
+  "release_notes": "「单位属性」与「GM 模式」改为即点即用：不再要求先读档、不再消耗次数；连接未就绪时会直接说明怎么恢复，不再报错。免踢名单自动补装。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.84/AnqilaTool.exe",
+  "size": 15973024,
+  "sha256": "F8860AA2EBA70FD4E5CE7D3385EC5CA020DD65F0B3FE5134405D7CA798C12EC6",
+  "core_sha256": "9A6B755D1D71DB5BE3C36D3618D08484F65A9168749A8525D806930F167E2C83",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/630270838",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/632939260",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -228,12 +228,17 @@
       "version": "1.0.83",
       "published_utc": "10/11/2026 08:36:21",
       "summary": "修复「单位属性」与「GM 模式」点击报错、页面文字重叠与按钮无响应的问题；新增进图后自动补装本局免踢名单，并把「一键通关」入口做到位。"
+    },
+    {
+      "version": "1.0.84",
+      "published_utc": "10/11/2026 09:53:35",
+      "summary": "「单位属性」与「GM 模式」改为即点即用：不再要求先读档、不再消耗次数；连接未就绪时会直接说明怎么恢复，不再报错。免踢名单自动补装。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.83/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.83/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.84/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.84/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
