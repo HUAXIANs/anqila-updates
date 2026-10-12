@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.87",
+  "version": "1.0.88",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-12T09:30:09.5289997Z",
-  "release_notes": "修好「零注入通道」按钮点完就变回原样的真正原因（状态刷新抢在点击之前把状态抹回去）：现在点一次就稳定停在「请启动游戏」，进图后自动变「已就绪」；状态检查移到后台，界面不再卡。单位属性与 GM 模式保持即点即用。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.87/AnqilaTool.exe",
-  "size": 15976624,
-  "sha256": "A55D97D0BA8ED8693D77FCBC570D89E034FBFEF84DC50CABF0C43131520312F6",
-  "core_sha256": "DD41C444C445F94CF0103EC5BD3C24C4ACD6F5E6C2D434910D5967AF3C46D756",
+  "published_utc": "2026-10-12T10:26:26.3425902Z",
+  "release_notes": "修好「进游戏后又提示重开」：先前只在游戏退出时才归位，超过等待窗口就没人管了。现在游戏一进去就自动完成后续步骤，不需要关游戏或重开工具；没启动游戏也不会還留半途。单位属性与 GM 模式保持即点即用。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.88/AnqilaTool.exe",
+  "size": 15977776,
+  "sha256": "2092BFB62569A73CC264F7D7918B69717C4FC53C597439B7EFCDED56517EB50F",
+  "core_sha256": "C62F2B62F70876A6009EF39FF90CC9F470467958E88CD027FDA041948308A825",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/633278629",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/633441837",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -248,12 +248,17 @@
       "version": "1.0.87",
       "published_utc": "10/12/2026 08:50:00",
       "summary": "修好「零注入通道」按钮点完就变回原样的真正原因（状态刷新抢在点击之前把状态抹回去）：现在点一次就稳定停在「请启动游戏」，进图后自动变「已就绪」；状态检查移到后台，界面不再卡。单位属性与 GM 模式保持即点即用。"
+    },
+    {
+      "version": "1.0.88",
+      "published_utc": "10/12/2026 10:10:00",
+      "summary": "修好「进游戏后又提示重开」：先前只在游戏退出时才归位，超过等待窗口就没人管了。现在游戏一进去就自动完成后续步骤，不需要关游戏或重开工具；没启动游戏也不会還留半途。单位属性与 GM 模式保持即点即用。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.87/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.87/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.88/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.88/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
