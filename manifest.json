@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.84",
+  "version": "1.0.85",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-12T06:48:37.8269409Z",
-  "release_notes": "「单位属性」与「GM 模式」改为即点即用：不再要求先读档、不再消耗次数；连接未就绪时会直接说明怎么恢复，不再报错。免踢名单自动补装。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.84/AnqilaTool.exe",
-  "size": 15973024,
-  "sha256": "F8860AA2EBA70FD4E5CE7D3385EC5CA020DD65F0B3FE5134405D7CA798C12EC6",
-  "core_sha256": "9A6B755D1D71DB5BE3C36D3618D08484F65A9168749A8525D806930F167E2C83",
+  "published_utc": "2026-10-12T07:24:16.2630465Z",
+  "release_notes": "修好「零注入通道」按钮点完就恢复原样、看不到状态的问题：现在点一次就稳定停在「请启动游戏 / 已就绪」，状态更新更快也不卡。单位属性与 GM 模式保持即点即用。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.85/AnqilaTool.exe",
+  "size": 15974000,
+  "sha256": "61FA4BAD525493A9AF9773EF6097C1333997EE357DCB311A8818C644320694AA",
+  "core_sha256": "215548186AA04F6D2345C60F0AA18ACFED80FB0F493F3B8CC62F17348F9C6332",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/632939260",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/633015154",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -233,12 +233,17 @@
       "version": "1.0.84",
       "published_utc": "10/11/2026 09:53:35",
       "summary": "「单位属性」与「GM 模式」改为即点即用：不再要求先读档、不再消耗次数；连接未就绪时会直接说明怎么恢复，不再报错。免踢名单自动补装。"
+    },
+    {
+      "version": "1.0.85",
+      "published_utc": "10/12/2026 07:10:00",
+      "summary": "修好「零注入通道」按钮点完就恢复原样、看不到状态的问题：现在点一次就稳定停在「请启动游戏 / 已就绪」，状态更新更快也不卡。单位属性与 GM 模式保持即点即用。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。",
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.84/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.84/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.85/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.85/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ]
 }
