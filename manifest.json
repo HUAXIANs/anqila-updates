@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.93",
+  "version": "1.0.94",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-12T19:33:29.1037972Z",
-  "release_notes": "不再反复退出登录：会话被后台刷新后会自动取回最新令牌重试，只有服务器明确判定失效才要求重登。「单位属性」「GM 模式」改走完整授权流程，点一次生效一次，不再失败重试。「零注入通道」不再上来就是绿的，不点就不动，进游戏前点一次即可。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.93/AnqilaTool.exe",
-  "size": 15987200,
-  "sha256": "A461E9C5127BE2E907BD4FE699190D9245910E9E37D789E2AD2AE61E4AEC2E28",
-  "core_sha256": "AD39789134BCA2F46F22F2AC1F4E62A59F1EE0234C435551071856A3DB74D93B",
+  "published_utc": "2026-10-13T03:28:09.3238233Z",
+  "release_notes": "修好「明明已就绪、单位属性与 GM 模式仍提示需要连接」：能否执行与界面判定改用同一依据。通道绿灯只代表已就绪，「已准备待启动」改为紫灯，一眼可分；退出游戏后自动回到「点击开启」。修掉后台看守在超时后误改引擎文件、导致残留副本与找不到游戏的问题。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.94/AnqilaTool.exe",
+  "size": 15989776,
+  "sha256": "C802CA8F3517292FA4D27DEEF202D39531E9435EE53CFC284743DF9EDA6097CE",
+  "core_sha256": "736C9A1A93E54A05EC3342BDBCAD0895FC74E1CFF5AF8FC8546FCA6FF12DC0E5",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/634774014",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/635762481",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.93/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.93/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.94/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.94/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -290,6 +290,11 @@
       "version": "1.0.93",
       "published_utc": "10/13/2026 04:00:00",
       "summary": "不再反复退出登录：会话被后台刷新后会自动取回最新令牌重试，只有服务器明确判定失效才要求重登。「单位属性」「GM 模式」改走完整授权流程，点一次生效一次，不再失败重试。「零注入通道」不再上来就是绿的，不点就不动，进游戏前点一次即可。"
+    },
+    {
+      "version": "1.0.94",
+      "published_utc": "10/13/2026 05:00:00",
+      "summary": "修好「明明已就绪、单位属性与 GM 模式仍提示需要连接」：能否执行与界面判定改用同一依据。通道绿灯只代表已就绪，「已准备待启动」改为紫灯，一眼可分；退出游戏后自动回到「点击开启」。修掉后台看守在超时后误改引擎文件、导致残留副本与找不到游戏的问题。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
