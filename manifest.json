@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.94",
+  "version": "1.0.96",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-13T03:28:09.3238233Z",
-  "release_notes": "修好「明明已就绪、单位属性与 GM 模式仍提示需要连接」：能否执行与界面判定改用同一依据。通道绿灯只代表已就绪，「已准备待启动」改为紫灯，一眼可分；退出游戏后自动回到「点击开启」。修掉后台看守在超时后误改引擎文件、导致残留副本与找不到游戏的问题。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.94/AnqilaTool.exe",
-  "size": 15989776,
-  "sha256": "C802CA8F3517292FA4D27DEEF202D39531E9435EE53CFC284743DF9EDA6097CE",
-  "core_sha256": "736C9A1A93E54A05EC3342BDBCAD0895FC74E1CFF5AF8FC8546FCA6FF12DC0E5",
+  "published_utc": "2026-10-14T03:29:24.0400362Z",
+  "release_notes": "新增「风控观测」页（只读）：一页看清地图自己统计了什么、当前各是多少，并列出七个面各自的结论与依据（已解决 / 通道盲区 / 无法解决）。新增只读对账，逐条显示差额。宝石校验码可选自动补正（默认关闭）。上一版修复保持不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.96/AnqilaTool.exe",
+  "size": 16019456,
+  "sha256": "64B39C4CEBA6C53A571B4BA2B5D485C4AA4C2EE8F81DA1BC133BA875DF51E59C",
+  "core_sha256": "CF3E35C0B00A5D4F2E0E6AF269C2669E377510B13DF2A1384BF7D07E51E0903F",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/635762481",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/639089766",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.94/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.94/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.96/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.96/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -295,6 +295,16 @@
       "version": "1.0.94",
       "published_utc": "10/13/2026 05:00:00",
       "summary": "修好「明明已就绪、单位属性与 GM 模式仍提示需要连接」：能否执行与界面判定改用同一依据。通道绿灯只代表已就绪，「已准备待启动」改为紫灯，一眼可分；退出游戏后自动回到「点击开启」。修掉后台看守在超时后误改引擎文件、导致残留副本与找不到游戏的问题。"
+    },
+    {
+      "version": "1.0.95",
+      "published_utc": "10/13/2026 10:00:00",
+      "summary": "通道按钮不再一直卡在「连接中」。「单位属性」「GM 模式」的「读取当前值」现在真的读回局内实时数值并填到界面。应用更快：内容密钥按版本缓存，第二次起免去提权与网络往返。「一键通关」修复触发参数并明确显示通关成败。"
+    },
+    {
+      "version": "1.0.96",
+      "published_utc": "10/14/2026 03:13:44",
+      "summary": "新增「风控观测」页（只读）：一页看清地图自己统计了什么、当前各是多少，并列出七个面各自的结论与依据（已解决 / 通道盲区 / 无法解决）。新增只读对账，逐条显示差额。宝石校验码可选自动补正（默认关闭）。上一版修复保持不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
