@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.97",
+  "version": "1.0.98",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-14T11:52:47.1640024Z",
-  "release_notes": "修好「风控观测」页整页显示「未读取」：控件登记的键与数据给的键写法不一致，现已对上，读取后立刻显示真实数值。并加了硬断言，防止这类「看着有、点了没反应」的问题再次溜过自检。上一版功能保持不变。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.97/AnqilaTool.exe",
-  "size": 16021440,
-  "sha256": "809619F4B28DF35C7262281D7A52CCB2244D2FD25693CF32FBF6FAABE6984047",
-  "core_sha256": "32504F06F3AFF78AAC10CBCBF7D2ABCB50F16BF1FD0C44A2C41EA4407904C9ED",
+  "published_utc": "2026-10-15T05:50:36.0772802Z",
+  "release_notes": "修好「装备图鉴超过一定数量就刷不进去」：游戏单表条目有硬上限，超出的会被丢掉。现在按「先保你要刷的和已拿到的，再补满，超出腾最旧的」处理，刷几件腾几件；实际持有的装备图鉴绝不会被腾掉，其它分类一律不动。上一版功能保持不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.98/AnqilaTool.exe",
+  "size": 16024960,
+  "sha256": "156518E474AB160FE0BEE9EF95F7F87382F1D6A5C869389647341BE460E92CED",
+  "core_sha256": "D559A8235D47607DD24BBE2F287E9BA420E1CC05874CA2D041DD7EFEBD24DFC7",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/640229870",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/642836569",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.97/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.97/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.98/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.98/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -310,6 +310,11 @@
       "version": "1.0.97",
       "published_utc": "10/14/2026 11:39:10",
       "summary": "修好「风控观测」页整页显示「未读取」：控件登记的键与数据给的键写法不一致，现已对上，读取后立刻显示真实数值。并加了硬断言，防止这类「看着有、点了没反应」的问题再次溜过自检。上一版功能保持不变。"
+    },
+    {
+      "version": "1.0.98",
+      "published_utc": "10/15/2026 05:36:55",
+      "summary": "修好「装备图鉴超过一定数量就刷不进去」：游戏单表条目有硬上限，超出的会被丢掉。现在按「先保你要刷的和已拿到的，再补满，超出腾最旧的」处理，刷几件腾几件；实际持有的装备图鉴绝不会被腾掉，其它分类一律不动。上一版功能保持不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
