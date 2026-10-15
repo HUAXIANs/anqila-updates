@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.98",
+  "version": "1.0.99",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-15T05:50:36.0772802Z",
-  "release_notes": "修好「装备图鉴超过一定数量就刷不进去」：游戏单表条目有硬上限，超出的会被丢掉。现在按「先保你要刷的和已拿到的，再补满，超出腾最旧的」处理，刷几件腾几件；实际持有的装备图鉴绝不会被腾掉，其它分类一律不动。上一版功能保持不变。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.98/AnqilaTool.exe",
-  "size": 16024960,
-  "sha256": "156518E474AB160FE0BEE9EF95F7F87382F1D6A5C869389647341BE460E92CED",
-  "core_sha256": "D559A8235D47607DD24BBE2F287E9BA420E1CC05874CA2D041DD7EFEBD24DFC7",
+  "published_utc": "2026-10-15T11:40:42.6363993Z",
+  "release_notes": "适配 2026-10-15 游戏地图更新：新增团本「纳克萨玛斯」与新区域「外域」的物品、装备、怪物、首领掉落与对应图鉴已按新地图同步，读取与定制均正常。上一版功能保持不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.99/AnqilaTool.exe",
+  "size": 16022816,
+  "sha256": "ACB722F7DC47D1D383738243C5CC0E7EB38689AF50F1C8D1A38DF80460C86529",
+  "core_sha256": "B1C73FD751559C307287B470D49A73106CF62C77194D40DD7350530E795A80A8",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/642836569",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/643678038",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.98/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.98/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.99/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.99/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -315,6 +315,11 @@
       "version": "1.0.98",
       "published_utc": "10/15/2026 05:36:55",
       "summary": "修好「装备图鉴超过一定数量就刷不进去」：游戏单表条目有硬上限，超出的会被丢掉。现在按「先保你要刷的和已拿到的，再补满，超出腾最旧的」处理，刷几件腾几件；实际持有的装备图鉴绝不会被腾掉，其它分类一律不动。上一版功能保持不变。"
+    },
+    {
+      "version": "1.0.99",
+      "published_utc": "10/15/2026 11:20:00",
+      "summary": "适配 2026-10-15 游戏地图更新：新增团本「纳克萨玛斯」与新区域「外域」的物品、装备、怪物、首领掉落与对应图鉴已按新地图同步，读取与定制均正常。上一版功能保持不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
