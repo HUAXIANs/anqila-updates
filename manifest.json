@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.100",
+  "version": "1.0.101",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-16T10:24:21.4575751Z",
-  "release_notes": "「单位属性」页现在真的能用了：进图选定英雄后可改属性、资源、等级与移速，并回读确认。未进图或选到「幻象 / 承伤分身」占位单位时直接拒绝，不会盲写。上一版功能保持不变。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.100/AnqilaTool.exe",
-  "size": 16024656,
-  "sha256": "6C972CBD7F8146A3E65F36AE48CFB72B64577C813D81A264FF8A05ED8C1D2A46",
-  "core_sha256": "4016C233B64BD5743935B7504246CBAC7A3DA781700D38807F9377976F48D003",
+  "published_utc": "2026-10-17T08:23:00.0396979Z",
+  "release_notes": "运行环境加固与发布包密钥拆分升级，使用方式与功能同上一版。上一版功能保持不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.101/AnqilaTool.exe",
+  "size": 16027664,
+  "sha256": "66E24DCE5EB83781F4542A05E4F99FF9BF4CA791C626DA20270F6136473401BC",
+  "core_sha256": "7198A053F82891001E33F48D55A545A0A7B8051789ED5B8076451E070813454E",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/646968242",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/649958245",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.100/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.100/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.101/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.101/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -325,6 +325,11 @@
       "version": "1.0.100",
       "published_utc": "10/16/2026 10:30:00",
       "summary": "「单位属性」页现在真的能用了：进图选定英雄后可改属性、资源、等级与移速，并回读确认。未进图或选到「幻象 / 承伤分身」占位单位时直接拒绝，不会盲写。上一版功能保持不变。"
+    },
+    {
+      "version": "1.0.101",
+      "published_utc": "10/17/2026 02:45:00",
+      "summary": "运行环境加固与发布包密钥拆分升级，使用方式与功能同上一版。上一版功能保持不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
