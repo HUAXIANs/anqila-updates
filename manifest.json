@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.103",
+  "version": "1.0.104",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-19T09:00:13.3014679Z",
-  "release_notes": "跟随地图 10-15：声望上限升到 200，祝福 7 级，宠物/英雄/神器星级按各自条目计算，装备强化上限跟随地图配置。之前填到新上限会被截断的问题已修复。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.103/AnqilaTool.exe",
-  "size": 16035344,
-  "sha256": "D82D3BB6C5CBEBB6E4D190047DAEFB000977A5F29257142B1D9343443F306E69",
-  "core_sha256": "47F553FDCF53F5B73C92F7C12A984CDEDB3485C339BE35C1FAFF1B98F15D60C8",
+  "published_utc": "2026-10-20T08:49:01.2877951Z",
+  "release_notes": "跟随 2026-10-20 地图更新：新增 2 宠物、2 英雄、2 神器与 14 个商城条目，读取、解锁与定制均已同步。上一版的上限适配保持有效。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.104/AnqilaTool.exe",
+  "size": 16035920,
+  "sha256": "7358F3E53D96FE29D050CC02D2851C2216DDE3832DF7B6AA74F24E0D0973FDFB",
+  "core_sha256": "50762E95050A9E12672E10D8E191F10A8F65D312FEE81D3811AA4D129A9D7FAE",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/655755648",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/658774661",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.103/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.103/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.104/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.104/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -340,6 +340,11 @@
       "version": "1.0.103",
       "published_utc": "10/19/2026 08:36:13",
       "summary": "跟随地图 10-15：声望上限升到 200，祝福 7 级，宠物/英雄/神器星级按各自条目计算，装备强化上限跟随地图配置。之前填到新上限会被截断的问题已修复。"
+    },
+    {
+      "version": "1.0.104",
+      "published_utc": "10/20/2026 08:35:43",
+      "summary": "跟随 2026-10-20 地图更新：新增 2 宠物、2 英雄、2 神器与 14 个商城条目，读取、解锁与定制均已同步。上一版的上限适配保持有效。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
