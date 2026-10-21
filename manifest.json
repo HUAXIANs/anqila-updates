@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.105",
+  "version": "1.0.106",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-20T12:02:09.9094594Z",
-  "release_notes": "跟随 2026-10-20 晚间地图修订：同步商城说明文字修正并重新对齐地图指纹。功能、上限与新增内容同上一版，使用方式不变。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.105/AnqilaTool.exe",
-  "size": 16036544,
-  "sha256": "53A5AE7DA62B0653CFED83CC7048C324C9E46A0FFDF82FDAC0401363A3AC08A2",
-  "core_sha256": "CCF22F1FD6DFB114FDECDB49A6A54E69AFB3BE0D8FEC77500F9EE0D696E5AE9D",
+  "published_utc": "2026-10-21T05:05:04.0070487Z",
+  "release_notes": "适配 2026-10-21 游戏引擎更新：重新对齐全部引擎接口位置并加强引擎自检。读取、解锁、批量与定制等功能与上限同上一版，使用方式不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.106/AnqilaTool.exe",
+  "size": 16037872,
+  "sha256": "DE753FF2FD65E0B917913BC13FB0CD4E6DB92270877293AA7C095803C27822CF",
+  "core_sha256": "8D9666434E70151B1D71CF0DB87F37A8D09E9E0721FB0D3D33AD46C89111814F",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/659213606",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/661414117",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.105/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.105/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.106/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.106/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -350,6 +350,11 @@
       "version": "1.0.105",
       "published_utc": "10/20/2026 11:44:22",
       "summary": "跟随 2026-10-20 晚间地图修订：同步商城说明文字修正并重新对齐地图指纹。功能、上限与新增内容同上一版，使用方式不变。"
+    },
+    {
+      "version": "1.0.106",
+      "published_utc": "10/21/2026 04:44:03",
+      "summary": "适配 2026-10-21 游戏引擎更新：重新对齐全部引擎接口位置并加强引擎自检。读取、解锁、批量与定制等功能与上限同上一版，使用方式不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
