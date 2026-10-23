@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.108",
+  "version": "1.0.109",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-22T09:56:12.6200868Z",
-  "release_notes": "适配 2026-10-22 地图更新：新增 6 件奇珍、7 件装备与 2 条首领技能，不归秘境开放到 80 层，开放难度上限升到 52。读取、解锁、批量与定制均已同步。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.108/AnqilaTool.exe",
-  "size": 16038512,
-  "sha256": "5088E5375694CAA224CD381D060F2042117E2E7028D2186AA9B32262AC38C131",
-  "core_sha256": "FEAB92ABB034AB14461D700262D1E2334C6F6C0FECB754FB0B81219BDC568B3F",
+  "published_utc": "2026-10-23T08:00:07.6619277Z",
+  "release_notes": "适配 2026-10-23 地图更新：商城「诛仙剑」开放并补全说明，不归秘境与大秘境挑战时重新校准属性与移速。功能与上限同上一版，使用方式不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.109/AnqilaTool.exe",
+  "size": 16038304,
+  "sha256": "BE91444F8A0BDAF015BA7CD801972DCB0792E0E51076FF30F6044BC5F286FF8C",
+  "core_sha256": "4A2899C7AACDD178A0A0552683F786E9BA2375AED5609D9D8C17540722555670",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/665411115",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/668413105",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.108/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.108/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.109/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.109/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -364,7 +364,12 @@
     {
       "version": "1.0.108",
       "published_utc": "10/22/2026 09:45:00",
-      "summary": "适配 2026-10-22 地图更新：新增 6 件奇珍、7 件装备与 2 条首领技能，不归秘境开放到 80 层，开放难度上限升到 52。读取、解锁、批量与定制均已同步。"
+      "summary": "适配 2026-10-22 地图更新：新增 6 件奇珍、7 件装备与 2 条首领技能，不归秘境开放到 80 层，开放难度上限升到 52。"
+    },
+    {
+      "version": "1.0.109",
+      "published_utc": "10/23/2026 07:55:00",
+      "summary": "适配 2026-10-23 地图更新：商城「诛仙剑」开放并补全说明，不归秘境与大秘境挑战时重新校准属性与移速。功能与上限同上一版，使用方式不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
