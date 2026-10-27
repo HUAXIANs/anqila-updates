@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.112",
+  "version": "1.0.113",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-27T10:36:03.9936790Z",
-  "release_notes": "适配 2026-10-27 地图更新：新增 3 件成就奇珍、成就奖励扩到 40 阶、新增 4 项收藏成就，挑战时改为替换技能。功能与操作方式不变。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.112/AnqilaTool.exe",
-  "size": 16031616,
-  "sha256": "1629CD3D0829C70298AB763CB1A0581926FECBDDF16AFEAD8EFFAEC182BF783E",
-  "core_sha256": "D4E126D99EA0B6ACBB150C2E09D9C81C39DF7C99CA9CB74F8D93AE6A82A4C55E",
+  "published_utc": "2026-10-27T11:42:03.6146269Z",
+  "release_notes": "风控观测扩展：宝石/宝藏/铭文三项完整性计数与旧计数槽全部纳入只读观测，校验表显示被标记条数；反作弊槽写入硬拦，宝库发放不受影响。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.113/AnqilaTool.exe",
+  "size": 16036928,
+  "sha256": "22B4510571DAB6A785298986400ABAF56879912B33850A97FA325654D4414145",
+  "core_sha256": "75EB997B58322E2FA297B191990AB649C03EB0C95E038C3EC5BB11D0CC3E61B2",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/681266287",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/681426096",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.112/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.112/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.113/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.113/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -384,7 +384,12 @@
     {
       "version": "1.0.112",
       "published_utc": "10/27/2026 10:05:00",
-      "summary": "适配 2026-10-27 地图更新：新增 3 件成就奇珍、成就奖励扩到 40 阶、新增 4 项收藏成就，挑战时改为替换技能。功能与操作方式不变。"
+      "summary": "适配 2026-10-27 地图更新：新增 3 件成就奇珍、成就奖励扩到 40 阶、新增 4 项收藏成就，挑战时改为替换技能。"
+    },
+    {
+      "version": "1.0.113",
+      "published_utc": "10/27/2026 11:30:00",
+      "summary": "风控观测扩展：宝石/宝藏/铭文三项完整性计数与旧计数槽全部纳入只读观测，校验表显示被标记条数；反作弊槽写入硬拦，宝库发放不受影响。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
