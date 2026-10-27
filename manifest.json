@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.111",
+  "version": "1.0.112",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-24T15:53:34.3967818Z",
-  "release_notes": "适配 2026-10-24 晚间地图修订：符石商店新增「黑龙挑战券」，巨龙战利品一件道具上限提到 15，存档属性纳入巨龙战利品属性。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.111/AnqilaTool.exe",
-  "size": 16037824,
-  "sha256": "279E5240F848186EF09F60A5A49B89F1F3C8C7FD710677CB8A9F693185396669",
-  "core_sha256": "F12C41D99B7A419E81196C208E029C39486153B6F842E40D04B119AAEF389F33",
+  "published_utc": "2026-10-27T10:36:03.9936790Z",
+  "release_notes": "适配 2026-10-27 地图更新：新增 3 件成就奇珍、成就奖励扩到 40 阶、新增 4 项收藏成就，挑战时改为替换技能。功能与操作方式不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.112/AnqilaTool.exe",
+  "size": 16031616,
+  "sha256": "1629CD3D0829C70298AB763CB1A0581926FECBDDF16AFEAD8EFFAEC182BF783E",
+  "core_sha256": "D4E126D99EA0B6ACBB150C2E09D9C81C39DF7C99CA9CB74F8D93AE6A82A4C55E",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/672658756",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/681266287",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.111/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.111/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.112/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.112/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -380,6 +380,11 @@
       "version": "1.0.111",
       "published_utc": "10/24/2026 15:20:00",
       "summary": "适配 2026-10-24 晚间地图修订：符石商店新增「黑龙挑战券」，巨龙战利品一件道具上限提到 15，存档属性纳入巨龙战利品属性。"
+    },
+    {
+      "version": "1.0.112",
+      "published_utc": "10/27/2026 10:05:00",
+      "summary": "适配 2026-10-27 地图更新：新增 3 件成就奇珍、成就奖励扩到 40 阶、新增 4 项收藏成就，挑战时改为替换技能。功能与操作方式不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
