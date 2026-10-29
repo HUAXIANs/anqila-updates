@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.114",
+  "version": "1.0.115",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-10-27T13:05:48.9947153Z",
-  "release_notes": "修复声望等级上限仍按旧值 160 截断的问题（地图实际为 200），填 161-200 不再被压回；新增发布前上限审计。其余上限全部核对一致。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.114/AnqilaTool.exe",
-  "size": 16036256,
-  "sha256": "5455AE6700C6ABCBEC29978210A4CFD31C2BF7D53B2881AB3D64B8B30C7141A2",
-  "core_sha256": "2954B5A321DEC186710DE8B03320D949EDEA9C4F95FA266BF5A88E1FBFF1494C",
+  "published_utc": "2026-10-29T09:39:29.6991503Z",
+  "release_notes": "适配 2026-10-29 地图更新：新增 7 件装备（含 3 件 130 级传说）、洛欧塞布掉落同步、不归秘境开放至 80 层并新增团本上古神殿地狱挑战、开放难度上限升到 53。功能与操作方式不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.115/AnqilaTool.exe",
+  "size": 16035744,
+  "sha256": "C9B1A9CB2F63C8633829C1D05F7D8EABFAAAFAB96F9B378FCCCEC2911DDE3566",
+  "core_sha256": "AE9A5309D74D0BB7695EBBE2A2AFBAAF195A48F92F54ADCF66D545B787DD04CD",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/681623174",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/688050083",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.27.0.1",
@@ -33,8 +33,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.114/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.114/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.115/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.115/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -394,7 +394,12 @@
     {
       "version": "1.0.114",
       "published_utc": "10/27/2026 12:05:00",
-      "summary": "修复声望等级上限仍按旧值 160 截断的问题（地图实际为 200），填 161-200 不再被压回；新增发布前上限审计。其余上限全部核对一致。"
+      "summary": "修复声望等级上限仍按旧值 160 截断的问题（地图实际为 200）；新增发布前上限审计。"
+    },
+    {
+      "version": "1.0.115",
+      "published_utc": "10/29/2026 09:20:00",
+      "summary": "适配 2026-10-29 地图更新：新增 7 件装备（含 3 件 130 级传说）、洛欧塞布掉落同步、不归秘境开放至 80 层并新增团本上古神殿地狱挑战、开放难度上限升到 53。功能与操作方式不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
