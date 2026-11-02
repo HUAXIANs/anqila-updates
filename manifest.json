@@ -2,15 +2,15 @@
   "schema": 2,
   "product": "anqila-y3-204521",
   "channel": "stable",
-  "version": "1.0.119",
+  "version": "1.0.120",
   "update_protocol": 2,
   "legacy_upgrade_version": "2.0.0.0",
-  "published_utc": "2026-11-02T07:22:49.0746707Z",
-  "release_notes": "修复部分网络下点「读取并备份」「应用」报「操作未完成」的问题；不再把无效地址当成可用入口。其余内容与全部上限不变，功能与操作方式不变。",
-  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.119/AnqilaTool.exe",
-  "size": 16042880,
-  "sha256": "A17C500E4E1E64D01AD42D704BB58C501C57F88439F5580D2284BDDA19FF16A6",
-  "core_sha256": "2709B3ABDED567D343E588428ACD03ACCD11C8A0C8AB9784314BEC7C58F858F3",
+  "published_utc": "2026-11-02T10:47:11.3374297Z",
+  "release_notes": "修复填激活码时提示「服务暂时异常」的问题：账号已绑定其他设备时会直接说明原因，不再显示成服务故障。其余内容与全部上限不变，功能与操作方式不变。",
+  "url": "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.120/AnqilaTool.exe",
+  "size": 16043280,
+  "sha256": "F121082DD4EB08BADEAFDB92D88838053D75C1ABDC2851FB3DD0F737643C5972",
+  "core_sha256": "AB916F910C5B042B86762F1B1560604CC2ACED26831121A8ACE2CB9335272D43",
   "signer_thumbprint": "29E0303DD8CD3666627855240AAFA0374C1A046F",
   "auth_endpoints": [
     "https://anqila.xyz",
@@ -19,7 +19,7 @@
     "https://anqila-license.adrianchirs8.workers.dev",
     "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
   ],
-  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/700888787",
+  "github_asset_url": "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/701417676",
   "package": "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
   "edge_ips": [
     "104.21.84.184",
@@ -32,8 +32,8 @@
     "104.24.0.1"
   ],
   "mirrors": [
-    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.119/AnqilaTool.exe",
-    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.119/AnqilaTool.exe",
+    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.120/AnqilaTool.exe",
+    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.120/AnqilaTool.exe",
     "https://anqila.xyz/updates/AnqilaTool.exe"
   ],
   "manifest_mirrors": [
@@ -419,6 +419,11 @@
       "version": "1.0.119",
       "published_utc": "11/02/2026 06:59:50",
       "summary": "修复部分网络下点「读取并备份」「应用」报「操作未完成」的问题；不再把无效地址当成可用入口。其余内容与全部上限不变，功能与操作方式不变。"
+    },
+    {
+      "version": "1.0.120",
+      "published_utc": "11/02/2026 10:28:58",
+      "summary": "修复填激活码时提示「服务暂时异常」的问题：账号已绑定其他设备时会直接说明原因，不再显示成服务故障。其余内容与全部上限不变，功能与操作方式不变。"
     }
   ],
   "release_archive_note": "历史版本简要已归档到发行页。"
