@@ -2,15 +2,15 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.122",
+    "version":  "1.0.123",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-11-05T12:31:21.2229250Z",
-    "release_notes":  "适配 2026-11-05 地图更新：商城条目增至 320、装备扩充至 656、开放难度上限升到 54，称号与邮件表随地图同步。其余内容与全部上限不变，功能与操作方式不变。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.122/AnqilaTool.exe",
-    "size":  15714800,
-    "sha256":  "C4BF7B3D08C3E2DEC0E6698697B51EF6D74393ED5FA959BD7D803857E029D905",
-    "core_sha256":  "8D218EAF25D0B621CDB373AC3C473F598CF41D6C93C79FB6DD0EF8341D8D84AF",
+    "published_utc":  "2026-11-06T07:40:43.1845725Z",
+    "release_notes":  "适配 2026-11-06 地图更新：定制称号增至 71 个、玩家奖励称号与邮件表随地图同步。本次只新增内容，全部上限与操作方式不变。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.123/AnqilaTool.exe",
+    "size":  15715344,
+    "sha256":  "1EC53585595E5F5E657C4710E3662BCBB6F8F8E9D927434D2CFDCB6C233B59B0",
+    "core_sha256":  "B5746C7D3A7BB2C4DD9A3C7DC2EA2493785D67E4DCA4F88D5FBC7266191C0BE3",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila.xyz",
@@ -19,7 +19,7 @@
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/713319988",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/716336614",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.21.84.184",
@@ -32,8 +32,8 @@
                      "104.24.0.1"
                  ],
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.122/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.122/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.123/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.123/AnqilaTool.exe",
                     "https://anqila.xyz/updates/AnqilaTool.exe"
                 ],
     "manifest_mirrors":  [
@@ -434,6 +434,11 @@
                                   "version":  "1.0.122",
                                   "published_utc":  "2026-11-05T12:10:00Z",
                                   "summary":  "适配 2026-11-05 地图更新：商城条目增至 320、装备扩充至 656、开放难度上限升到 54，称号与邮件表随地图同步。其余内容与全部上限不变，功能与操作方式不变。"
+                              },
+                              {
+                                  "version":  "1.0.123",
+                                  "published_utc":  "2026-11-06T07:30:00Z",
+                                  "summary":  "适配 2026-11-06 地图更新：定制称号增至 71 个、玩家奖励称号与邮件表随地图同步。本次只新增内容，全部上限与操作方式不变。"
                               }
                           ],
     "release_archive_note":  "历史版本简要已归档到发行页。"
