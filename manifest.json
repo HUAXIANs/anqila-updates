@@ -2,15 +2,15 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.125",
+    "version":  "1.0.126",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-11-07T09:02:41.8296890Z",
-    "release_notes":  "适配 2026-11-07 地图更新：团本商店新增 2 件商品。本次只新增内容，内容表数量与全部上限均与上一版一致，功能与操作方式不变。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.125/AnqilaTool.exe",
-    "size":  15714544,
-    "sha256":  "D4A1ACB491CF83961C9D210CC04AE7FBAA9F5B67885639A57E47AF3DC3CD2229",
-    "core_sha256":  "3FB225D7A89B9C342EFD7E51C061AD6D1B8C19EE82C478171F25DF901F12C5F3",
+    "published_utc":  "2026-11-08T07:32:25.1732874Z",
+    "release_notes":  "适配 2026-11-08 地图修订：本次地图只更新了自身元数据，内容表与全部上限均与上一版完全一致。功能与操作方式不变。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.126/AnqilaTool.exe",
+    "size":  15714752,
+    "sha256":  "0AB892EBC6EF49CDC5E937FBF2244DDD2E14310C5ED2AE4FFE70A5E0CB8B822E",
+    "core_sha256":  "988679481487A2CDFD77355A5F0664EA22EEABEBCDA83FD1867341848D357EFC",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila.xyz",
@@ -19,7 +19,7 @@
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/720172726",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/723249749",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.21.84.184",
@@ -32,8 +32,8 @@
                      "104.24.0.1"
                  ],
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.125/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.125/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.126/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.126/AnqilaTool.exe",
                     "https://anqila.xyz/updates/AnqilaTool.exe"
                 ],
     "manifest_mirrors":  [
@@ -449,6 +449,11 @@
                                   "version":  "1.0.125",
                                   "published_utc":  "2026-11-07T08:50:00Z",
                                   "summary":  "适配 2026-11-07 地图更新：团本商店新增 2 件商品。本次只新增内容，内容表数量与全部上限均与上一版一致，功能与操作方式不变。"
+                              },
+                              {
+                                  "version":  "1.0.126",
+                                  "published_utc":  "2026-11-08T07:05:00Z",
+                                  "summary":  "适配 2026-11-08 地图修订：本次地图只更新了自身元数据，内容表与全部上限均与上一版完全一致。功能与操作方式不变。"
                               }
                           ],
     "release_archive_note":  "历史版本简要已归档到发行页。"
