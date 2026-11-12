@@ -2,15 +2,15 @@
     "schema":  2,
     "product":  "anqila-y3-204521",
     "channel":  "stable",
-    "version":  "1.0.129",
+    "version":  "1.0.130",
     "update_protocol":  2,
     "legacy_upgrade_version":  "2.0.0.0",
-    "published_utc":  "2026-11-12T11:56:37.4407704Z",
-    "release_notes":  "适配 2026-11-12 晚间的地图小修订：仅一处存档属性读取逻辑变化，内容表与全部上限均未改动。功能与操作方式不变。",
-    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.129/AnqilaTool.exe",
-    "size":  15714112,
-    "sha256":  "D69C72160CAB0B1D33CA2C9FCB73F8788403C3F88BDA92CB11D52C27C0F3273E",
-    "core_sha256":  "FD75BB1054DDD904BC3085A1609146DF4AACFA20388ECE102D0236AE4D637D3D",
+    "published_utc":  "2026-11-12T13:19:18.7495800Z",
+    "release_notes":  "宝库新增「美食宝藏」「星际宝藏」两套，可管理条目 981→1132、品级分类 60→68；同时适配 2026-11-12 晚间地图修订。其余上限与操作方式不变。",
+    "url":  "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.130/AnqilaTool.exe",
+    "size":  15716528,
+    "sha256":  "4D0358932C5A47F478891F4767AD24051AE74F6266B3093DD2B951FE1218321D",
+    "core_sha256":  "432CA5F58F0774C4C5DDA2DE0A8F1CBA8566738753ED4694A818214F3F798111",
     "signer_thumbprint":  "29E0303DD8CD3666627855240AAFA0374C1A046F",
     "auth_endpoints":  [
                            "https://anqila.xyz",
@@ -19,7 +19,7 @@
                            "https://anqila-license.adrianchirs8.workers.dev",
                            "https://uhacgqiogygfsksigeal.supabase.co/functions/v1/anqila-license"
                        ],
-    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/739307456",
+    "github_asset_url":  "https://api.github.com/repos/HUAXIANs/anqila-tool/releases/assets/739565015",
     "package":  "single-file Authenticode-signed launcher; updater verifies size, SHA-256 and signer; China direct mirror (ghproxy + GitHub)",
     "edge_ips":  [
                      "104.21.84.184",
@@ -32,8 +32,8 @@
                      "104.24.0.1"
                  ],
     "mirrors":  [
-                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.129/AnqilaTool.exe",
-                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.129/AnqilaTool.exe",
+                    "https://ghproxy.net/https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.130/AnqilaTool.exe",
+                    "https://github.com/HUAXIANs/anqila-updates/releases/download/v1.0.130/AnqilaTool.exe",
                     "https://anqila.xyz/updates/AnqilaTool.exe"
                 ],
     "manifest_mirrors":  [
@@ -469,6 +469,11 @@
                                   "version":  "1.0.129",
                                   "published_utc":  "2026-11-12T11:45:00Z",
                                   "summary":  "适配 2026-11-12 晚间的地图小修订：仅一处存档属性读取逻辑变化，内容表与全部上限均未改动。功能与操作方式不变。"
+                              },
+                              {
+                                  "version":  "1.0.130",
+                                  "published_utc":  "2026-11-12T12:55:00Z",
+                                  "summary":  "宝库新增「美食宝藏」「星际宝藏」两套，可管理条目 981→1132、品级分类 60→68；同时适配 2026-11-12 晚间地图修订。其余上限与操作方式不变。"
                               }
                           ],
     "release_archive_note":  "历史版本简要已归档到发行页。"
